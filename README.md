@@ -25,7 +25,7 @@
 
    Re-run the curl command.
 
-   Restart your terminal or enter a new one. To confirm deno was installed, check the version by running `deno --version`, should see something like `deno 2.1.4`
+   Restart your terminal or enter a new one. To confirm deno was installed, check the version by running `deno --version`, should see something like `deno 2.2.2`
 
    You can find more information on the [Deno Docs](https://docs.deno.com/runtime/manual/getting_started/installation)
 
