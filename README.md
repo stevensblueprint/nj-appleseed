@@ -1,6 +1,6 @@
 ## Setup for Devs
 
-1. Ensure that you have Deno installed. We are using Deno 2 (version 2.1.4). You can skip this step if you do. If you don't or are unsure, you can use the following command to install it.
+1. Ensure that you have Deno installed. We are using Deno 2 (version 2.2.2). You can skip this step if you do. If you don't or are unsure, you can use the following command to install it.
 
    **Homebrew users:**
 
