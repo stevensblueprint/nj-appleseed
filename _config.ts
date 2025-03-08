@@ -17,7 +17,25 @@ const site = lume({
   });
 
 site.use(jsx());
-site.use(tailwindcss());
+site.use(
+  tailwindcss({
+    extensions: [".html", ".js", ".njk", ".jsx"],
+    options: {
+      content: ["./src/**/*.html", "./src/**/*.njk", "./src/**/*.jsx"],
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0078E8",
+            secondary: "#93C9FE",
+            "text-color": "#333333",
+            negative: "#ffffff",
+            maroon: "#9D1535",
+          },
+        },
+      },
+    },
+  }),
+)
 site.use(postcss());
 site.ignore("index.html");
 site.copy("styles.css");

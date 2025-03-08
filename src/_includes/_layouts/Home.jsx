@@ -1,19 +1,19 @@
-export default function Home({ children, title, about, url }) {
+import Header from "../../_components/Header.jsx";
+
+export default function Home({ title, children }) {
     return (
-      <html lang="en">
+        <html lang="en">
         <head>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>{title}</title>
-          <link rel="stylesheet" href="/styles.css" />
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>{title}</title>
         </head>
         <body className="bg-gray-100 min-h-screen">
-  
-          <main className="container mx-auto px-4 py-8">
-
-          </main>
-
+            <Header />
+            <main className="container mx-auto px-4 py-8">
+                {children} 
+            </main>
         </body>
-      </html>
+        </html>
     );
-  }
+}
