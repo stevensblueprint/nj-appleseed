@@ -19,7 +19,7 @@ export default function Header() {
             <div className="flex flex-row justify-between p-6">
             <div>
                 <a href="/">
-                <img src="./assets/image.png" alt="NJAppleseed Placeholder Logo"></img>
+                <img src="/assets/logo_banner.png" alt="Placeholder Logo"></img>
                 </a>
             </div>     
             <div className="md:hidden"> 
@@ -33,7 +33,7 @@ export default function Header() {
                 {desktopNavigationLinks()}
             </div>
             </div>
-            <div className="md:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col peer-checked:gap-3 px-5">
+            <div className="md:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col gap-3 transition-all duration-300 px-3">
                 {mobileNavigationLinks()}
             </div>
             </div>
@@ -43,7 +43,7 @@ export default function Header() {
 
 function desktopNavigationLinks(){
     return navigationLinks.map((link) => (
-        <a href={link.href} className="text-md p-5 font-semibold hover:font-bold hover:underline underline-offset-4 decoration-2">
+        <a href={link.href} className="text-base p-5 font-semibold hover:font-bold hover:underline underline-offset-4 decoration-2">
             {link.text}
         </a>
     ))
@@ -51,7 +51,7 @@ function desktopNavigationLinks(){
 
 function mobileNavigationLinks(){
     return navigationLinks.map((link) => (
-        <a href={link.href} className="text-md px-5 py-2 font-semibold hover:font-bold hover:underline underline-offset-4 decoration-2">
+        <a href={link.href} className="text-base px-5 py-2 font-semibold hover:font-bold hover:underline underline-offset-4 decoration-2">
             {link.text}
         </a>
     ))
