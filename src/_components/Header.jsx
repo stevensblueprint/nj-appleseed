@@ -1,6 +1,14 @@
+const navigationLinks = [
+    { href: "/about", text: "ABOUT" },
+    { href: "/faqs", text: "FAQs" },
+    { href: "/manual", text: "MANUAL" },
+    { href: "/videos", text: "VIDEOS" },
+    { href: "/resources", text: "RESOURCES & TOOLS" },
+  ];
+
 export default function Header() {
     return (
-        <header className="relative">
+        <header className="relative px-4">
             <div className="flex flex-col">
             <input
                 type="checkbox"
@@ -22,21 +30,29 @@ export default function Header() {
             </label>
             </div>
             <div className="max-md:hidden flex flex-row gap-6"> 
-                <a href="/about" className="text-md p-5 font-semibold hover:font-bold">ABOUT</a>
-                <a href="/faqs" className="text-md p-5 font-semibold hover:font-bold">FAQs</a>
-                <a href="/manual" className="text-md p-5 font-semibold hover:font-bold">MANUAL</a>
-                <a href="/videos" className="text-md p-5 font-semibold hover:font-bold">VIDEOS</a>
-                <a href="/resources" className="text-md p-5 font-semibold hover:font-bold">RESOURCES & TOOLS</a>
+                {desktopNavigationLinks()}
             </div>
             </div>
-            <div className="md:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col peer-checked:gap-3">
-                <a href="/about" className="text-md px-5 py-2 font-semibold hover:font-bold">ABOUT</a>
-                <a href="/faqs" className="text-md px-5 py-2 font-semibold hover:font-bold">FAQs</a>
-                <a href="/manual" className="text-md px-5 py-2 font-semibold hover:font-bold">MANUAL</a>
-                <a href="/videos" className="text-md px-5 py-2 font-semibold hover:font-bold">VIDEOS</a>
-                <a href="/resources" className="text-md px-5 py-2 font-semibold hover:font-bold">RESOURCES & TOOLS</a>
+            <div className="md:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col peer-checked:gap-3 px-5">
+                {mobileNavigationLinks()}
             </div>
             </div>
         </header>
     );
+}
+
+function desktopNavigationLinks(){
+    return navigationLinks.map((link) => (
+        <a href={link.href} className="text-md p-5 font-semibold hover:font-bold hover:underline underline-offset-4 decoration-2">
+            {link.text}
+        </a>
+    ))
+}
+
+function mobileNavigationLinks(){
+    return navigationLinks.map((link) => (
+        <a href={link.href} className="text-md px-5 py-2 font-semibold hover:font-bold hover:underline underline-offset-4 decoration-2">
+            {link.text}
+        </a>
+    ))
 }
