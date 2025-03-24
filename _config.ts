@@ -39,5 +39,6 @@ site.use(
 site.use(postcss());
 site.ignore("index.html");
 site.copy("styles.css");
+site.copy("assets");
 
 export default site;
