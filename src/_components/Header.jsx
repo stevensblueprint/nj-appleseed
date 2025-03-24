@@ -9,7 +9,7 @@ const navigationLinks = [
 export default function Header() {
     return (
         <header className="relative px-4">
-            <div className="flex flex-col">
+            <nav className="flex flex-col">
             <input
                 type="checkbox"
                 id="accordianMenu"
@@ -36,7 +36,7 @@ export default function Header() {
             <div className="md:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col gap-3 transition-all duration-300 px-3">
                 {mobileNavigationLinks()}
             </div>
-            </div>
+            </nav>
         </header>
     );
 }
