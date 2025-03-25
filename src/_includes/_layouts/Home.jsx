@@ -1,4 +1,5 @@
 import Header from "../../_components/Header.jsx";
+import OurMission from "../../_components/OurMissions.jsx";
 
 export default function Home({ title, children }) {
     return (
@@ -12,7 +13,7 @@ export default function Home({ title, children }) {
         <body className="bg-gray-100 min-h-screen">
             <Header />
             <main className="container mx-auto px-4 py-8">
-                {children} 
+                {children}
             </main>
         </body>
         </html>
