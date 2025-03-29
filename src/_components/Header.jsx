@@ -19,7 +19,7 @@ export default function Header() {
             <div className="flex flex-row justify-between p-6">
             <div>
                 <a href="/">
-                <img src="/assets/image.png" alt="Placeholder Logo"></img>
+                <img src="/assets/headerimage.png" alt="Placeholder Logo"></img>
                 </a>
             </div>     
             <div className="md:hidden"> 
