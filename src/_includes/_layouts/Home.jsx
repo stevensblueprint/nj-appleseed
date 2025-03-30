@@ -12,7 +12,6 @@ export default function Home({ title, children }) {
         </head>
         <body className="bg-gray-100 min-h-screen">
             <Header />
-            <OurMission />
             <main className="container mx-auto px-4 py-8">
                 {children}
             </main>
