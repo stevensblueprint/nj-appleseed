@@ -33,7 +33,7 @@ export default function Header() {
                 {desktopNavigationLinks()}
             </div>
             </div>
-            <div className="md:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col gap-3 transition-all duration-300 px-3">
+            <div className="md:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col gap-3 transition-all duration-300 px-3 pb-3">
                 {mobileNavigationLinks()}
             </div>
             </nav>
