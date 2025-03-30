@@ -25,7 +25,7 @@ site.use(
       theme: {
         extend: {
           colors: {
-            primary: "#0078E8",
+            primary: "#0078E8", // currently blueprint colors
             secondary: "#93C9FE",
             "text-color": "#333333",
             negative: "#ffffff",
