@@ -1,25 +1,20 @@
 name: prettier
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Clone repository
+        uses: actions/checkout@v4
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
 
-    - name: Deno install
-      run: curl -fsSL https://deno.land/x/install/install.sh | sh
-
-    - name: Cache Deno dependencies
-      uses: actions/cache@v4
-      with:
-        path: ~/.cache/deno
-        key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-deno-
-
-    - name: Run Deno cache
-      run: deno cache --lock=deno.lock
+      - name: Run prettier -check
+        run: deno fmt --check
