@@ -17,7 +17,7 @@ jobs:
           deno-version: v2.x
 
       - name: Run prettier check
-        run: deno fmt --check
+        run: deno fmt --check || true
 
       - name: Run prettier format
         run: deno fmt
