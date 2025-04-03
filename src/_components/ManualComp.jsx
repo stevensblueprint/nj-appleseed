@@ -2,12 +2,12 @@ export default function ManualComp({manual}) {
     return (
         <section className="px-6 py-12 max-w-6xl mx-auto">
             {/* Include all the input values here */}
-            <input id="intro" type="checkbox" title="intro-tab" className="hidden peer/intro"/>
+            <input id="intro" type="checkbox" title="intro-tab" className="hidden peer/intro" defaultChecked />
             
             {/* Div holding all the labels */}
             <div className="flex flex-row items-end">
             <label htmlFor="intro" className="cursor-pointer label">
-                <p className="text-base p-2 border-b peer-checked/intro:border-black peer-checked/intro:text-black hover:border-black hover:text-black text-gray-400 border-gray-400">Introduction</p>
+                <p className="text-base p-2 border-b-2 hover:border-black hover:text-black text-gray-400 border-gray-400">Introduction</p>
             </label>
             <label htmlFor="accordianMenu" className="cursor-pointer label">
                 <p className="text-base p-2 border-b hover:border-black text-gray-400 border-gray-400">Chapter 1: Rights of Uninsured Patients</p>
