@@ -25,11 +25,12 @@ site.use(
       theme: {
         extend: {
           colors: {
-            primary: "#0078E8",
-            secondary: "#93C9FE",
+            primary: "#9D1535",
+            secondary: "#919F63",
             "text-color": "#333333",
             negative: "#ffffff",
-            maroon: "#9D1535",
+            "background-grey": "#EBEBEB",
+            "footer-grey": "7D7D7D",
           },
         },
       },
