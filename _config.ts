@@ -26,7 +26,8 @@ site.use(
         extend: {
           colors: {
             primary: "#9D1535",
-            secondary: "#919F63",
+            secondary: "#742a2a",
+            green: "#919F63",
             "text-color": "#333333",
             negative: "#ffffff",
             "background-grey": "#EBEBEB",
