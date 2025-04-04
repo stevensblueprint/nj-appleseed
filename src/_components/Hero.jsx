@@ -10,7 +10,7 @@ export default function Header() {
         <p className="text-xl mb-6">to the people of New Jersey.</p>
         <a
           href="#"
-          className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition duration-300"
+          className="bg-primary hover:hover:bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition duration-300"
         >
           DONATE TODAY
         </a>

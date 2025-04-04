@@ -14,15 +14,15 @@ export default function OurMission() {
         </article>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-          <a href="/nja" className="bg-red-800 text-white py-4 rounded text-center hover:bg-red-900 transition-colors">
+          <a href="/nja" className="bg-primary text-white py-4 rounded text-center hover:bg-secondary transition-colors">
             NJA
           </a>
-          <a href="/njca" className="bg-red-800 text-white py-4 rounded text-center hover:bg-red-900 transition-colors">
+          <a href="/njca" className="bg-primary text-white py-4 rounded text-center hover:bg-secondary transition-colors">
             NJCA
           </a>
         </div>
         
-        <a href="/healthcare-coalition" className="bg-red-800 text-white py-4 rounded w-full block text-center hover:bg-red-900 transition-colors">
+        <a href="/healthcare-coalition" className="bg-primary text-white py-4 rounded w-full block text-center hover:bg-secondary transition-colors">
           NJ for Healthcare Coalition
         </a>
       </div>
