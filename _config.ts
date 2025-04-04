@@ -25,8 +25,8 @@ site.use(
       theme: {
         extend: {
           colors: {
-            primary: "#9D1535",
-            secondary: "#742a2a",
+            primary: "#9D1535", // Maroon
+            secondary: "#742a2a", // Darker Maroon
             green: "#919F63",
             "text-color": "#333333",
             negative: "#ffffff",
