@@ -7,17 +7,17 @@ export default function ManualComp({manual}) {
             ))}
 
             {/* Div holding all the labels */}
-            <div className="flex flex-row items-end">
+            <div className="flex flex-row items-end overflow-x-auto">
             {manual.map(( chapter ) => (
             <label htmlFor={chapter.id} className="cursor-pointer label">
-                <p className="text-base p-2 border-b-2 hover:border-black hover:text-black text-gray-400 border-gray-400">{chapter.heading}</p>
+                <p className="text-nowrap text-base p-2 pb-2 border-b-2 hover:border-black hover:text-black text-gray-400 border-gray-400">{chapter.heading}</p>
             </label>
             ))}
             </div>
 
             {/* Every piece of the manual */}
             {manual.map(( chapter ) => (
-                <section className={`py-6 overflow-hidden max-h-0 peer-checked/${chapter.id}:max-h-none`}>
+                <section className={`peer-checked/${chapter.id}:py-6 overflow-hidden max-h-0 peer-checked/${chapter.id}:max-h-none`}>
                     <h1 className="text-4xl text-semibold text-[#919F63] py-6">{chapter.heading}</h1>
                     <p className="text-lg"> {chapter.text}</p>
                 </section>
