@@ -3,7 +3,7 @@ export default function ManualComp({manual}) {
         <section className="px-6 py-12 max-w-6xl mx-auto">
             {/* Include all the input values here */}
             {manual.map(( chapter ) => (
-                <input id={chapter.id} type="checkbox" title={`${chapter.id}-tab`} className={`hidden peer/${chapter.id}`} />
+                <input id={chapter.id} type="radio" name="manualtabs" title={`${chapter.id}-tab`} className={`hidden peer/${chapter.id}`} />
             ))}
 
             {/* Div holding all the labels */}
