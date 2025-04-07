@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Hero() {
   return (
     <header
       className="relative w-full h-screen bg-cover bg-center"
