@@ -19,6 +19,7 @@ export default function Header() {
             <div className="flex flex-row justify-between p-6 items-center">
             <div>
                 <a href="/">
+                <img src="/assets/image.png" alt="Placeholder Logo" className="max-h-24 max-w-36 md:max-w-48 md:max-h-24"></img>
                 <img src="/assets/headerimage.png" alt="Placeholder Logo" className="max-h-24 max-w-36 md:max-w-48 md:max-h-24"></img>
                 </a>
             </div>     
