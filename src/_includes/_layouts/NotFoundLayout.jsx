@@ -2,7 +2,7 @@ import Header from "../../_components/Header.jsx";
 
 export default function NotFoundLayout({ title }) {
   return (
-    <html lang="en">
+    <section>
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,12 +24,12 @@ export default function NotFoundLayout({ title }) {
         404 Error! <a href="/" className="text-[#8A9A5B] hover:underline">Click here to go to the homepage.</a>
       </h1>
       
-      <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+      <article className="text-xl text-gray-700 max-w-2xl mx-auto">
         Unfortunately, the page you are trying to access does not exist.
-      </p>
+      </article>
     </div>
         </main>
       </body>
-    </html>
+    </section>
   );
 } 
