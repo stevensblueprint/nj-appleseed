@@ -18,7 +18,7 @@ export default function ManualComp({manual}) {
             {/* Every piece of the manual */}
             {manual.map(( chapter ) => (
                 <section className={`peer-checked/${chapter.id}:py-6 overflow-hidden max-h-0 peer-checked/${chapter.id}:max-h-none`}>
-                    <h1 className="text-4xl text-semibold text-[#919F63] py-6">{chapter.heading}</h1>
+                    <h1 className="text-4xl text-semibold text-green py-6">{chapter.heading}</h1>
                     <p className="text-lg"> {chapter.text}</p>
                 </section>
             ))}
