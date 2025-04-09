@@ -14,22 +14,6 @@ manual:
       id: chap1
       text: |
             For those who have health insurance of some kind – private insurance through your job or an individual policy bought on an insurance exchange, or through some public program like NJ FamilyCare, Medicaid or Medicare, this is for you.  Any kind of insurance is better than none, but policies differ not just in the monthly premiums you pay but also in: what benefits they provide and the scope of coverage, including the size of deductibles and co-pays; on pre-approval requirements; which providers are in or out of network; and what drugs are covered.
-            
-            **Section 1: Understanding Your Plan**
-            
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel rhoncus nunc, et viverra urna. Integer finibus porttitor nulla, quis ultricies elit finibus tincidunt. Vestibulum ut turpis nisl. Aliquam at nibh quis magna luctus tincidunt condimentum non urna. Praesent eget luctus mauris, quis tristique magna. Cras eu accumsan mauris. Vestibulum et feugiat velit. Ut semper condimentum lorem, id ultrices nisl pulvinar sit amet. Sed elementum mattis pretium. Suspendisse nec sapien nec nunc aliquam tincidunt ut eget turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. \
-            
-            Section 2: Seeking Emergency Plan \
-            
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel rhoncus nunc, et viverra urna. Integer finibus porttitor nulla, quis ultricies elit finibus tincidunt. Vestibulum ut turpis nisl. Aliquam at nibh quis magna luctus tincidunt condimentum non urna. Praesent eget luctus mauris, quis tristique magna. Cras eu accumsan mauris. Vestibulum et feugiat velit. Ut semper condimentum lorem, id ultrices nisl pulvinar sit amet. Sed elementum mattis pretium. Suspendisse nec sapien nec nunc aliquam tincidunt ut eget turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. \
-            
-            Section 3: Seeking Car at a Hospital-Owned Facility \
-            
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel rhoncus nunc, et viverra urna. Integer finibus porttitor nulla, quis ultricies elit finibus tincidunt. Vestibulum ut turpis nisl. Aliquam at nibh quis magna luctus tincidunt condimentum non urna. Praesent eget luctus mauris, quis tristique magna. Cras eu accumsan mauris. Vestibulum et feugiat velit. Ut semper condimentum lorem, id ultrices nisl pulvinar sit amet. Sed elementum mattis pretium. Suspendisse nec sapien nec nunc aliquam tincidunt ut eget turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. \
-            
-            Section 4: Seeking Preventive, Routine, and Speciality Care \
-            
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel rhoncus nunc, et viverra urna. Integer finibus porttitor nulla, quis ultricies elit finibus tincidunt. Vestibulum ut turpis nisl. Aliquam at nibh quis magna luctus tincidunt condimentum non urna. Praesent eget luctus mauris, quis tristique magna. Cras eu accumsan mauris. Vestibulum et feugiat velit. Ut semper condimentum lorem, id ultrices nisl pulvinar sit amet. Sed elementum mattis pretium. Suspendisse nec sapien nec nunc aliquam tincidunt ut eget turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. \
     
     - heading: |
             Chapter 2: Rights of Uninsured Patients
