@@ -1,4 +1,5 @@
 import Header from "../../_components/Header.jsx";
+import Footer from "../../_components/Footer.jsx";
 
 export default function About({ title }) {
     return (
@@ -11,6 +12,7 @@ export default function About({ title }) {
               </head>
               <body className="bg-gray-100 min-h-screen">
                 <Header />
+                <Footer />
               </body>
             </html>
     );
