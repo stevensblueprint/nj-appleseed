@@ -1,71 +1,97 @@
+import { data } from "./OurManualData.js";
+
 export default function OurManual() {
-  const scroll = (direction) => {
-    const container = document.getElementById("manual-scroll");
-    const scrollAmount = 340;
-    if (container) {
-      container.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
+  const slideLeft = () => {
+    const slider = document.getElementById("slider");
+    slider.scrollLeft -= 500;
+  };
+
+  const slideRight = () => {
+    const slider = document.getElementById("slider");
+    slider.scrollLeft += 500;
   };
 
   return (
-    <section className="bg-gray-100 px-6 py-12">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-light text-[#8A9A5B] mb-6">
-          Explore our manual
-        </h1>
-        <article className="text-gray-800 mb-8">
-          Introduction to the purpose and content of the manual. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Sed vulputate nisi ut
-          bibendum egestas. Suspendisse neque elit, aliquam et interdum at,
-          luctus in neque.
-        </article>
+    <section className="flex flex-col md:flex-row px-6 py-12 mx-auto gap-[150px] bg-neutral-200">
+      <section className="flex flex-col md:flex-row px-6 py-12 mx-auto gap-[150px] max-w-6xl">
+        <div className="flex-1">
+          <h1 className="text-4xl font-light text-[#8A9A5B] mb-6">
+            Explore our manual
+          </h1>
+          <article className="text-gray-800 mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            vulputate nisi ut bibendum egestas. Suspendisse neque elit, aliquam
+            et interdum at, luctus in neque.
+          </article>
 
-        <div className="relative">
-          <button
-            onClick={() => scroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-300 rounded-full p-2 shadow"
-          >
-            &#10094;
-          </button>
-
-          <div
-            id="manual-scroll"
-            className="flex overflow-x-auto scroll-smooth gap-4 pb-4 px-10"
-            style={{ scrollBehavior: "smooth" }}
-          >
-            {[1, 2, 3, 4, 5, 6].map((chapter) => (
-              <div
-                key={chapter}
-                className="bg-white rounded-xl shadow-md p-6 w-[300px] flex-shrink-0"
+          <div className="relative flex items-center overflow-hidden max-w-6xl">
+            <button
+              onClick={slideLeft}
+              className="opacity-50 hover:opacity-100 cursor-pointer z-10"
+              aria-label="Scroll Left"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-10 h-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <h3 className="font-bold text-lg mb-1">Chapter {chapter}</h3>
-                <h4 className="uppercase text-xs font-semibold text-gray-600 mb-2">
-                  Rights of Uninsured Patients
-                </h4>
-                <p className="text-sm text-gray-800 mb-4">
-                  For those who have health insurance of some kind – private
-                  insurance through your job or an individual policy bought on
-                  an insurance exchange, or through some public program like NJ
-                  FamilyCare, Medicaid or Medicare, this is for you.
-                </p>
-                <button className="bg-red-800 text-white text-sm py-2 px-4 rounded hover:bg-red-900 transition-colors">
-                  READ MORE
-                </button>
-              </div>
-            ))}
-          </div>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
 
-          <button
-            onClick={() => scroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-300 rounded-full p-2 shadow"
-          >
-            &#10095;
-          </button>
+            <div
+              id="slider"
+              className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide"
+            >
+              {data.map((item) => (
+                <div
+                  key={item.title}
+                  className="inline-block align-top w-[250px] bg-white rounded-xl shadow-md p-6 mx-2 overflow-hidden"
+                >
+                  <h2 className="text-lg font-semibold">{item.title}</h2>
+                  <h3 className="uppercase text-xs tracking-widest mt-2 mb-4">
+                    {item.subheading}
+                  </h3>
+                  <p className="text-sm text-gray-700 mb-4 break-words whitespace-normal">
+                    {item.paragraph}
+                  </p>
+                  <button className="bg-red-700 text-white px-4 py-2 text-sm rounded-md">
+                    {item.button_text}
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            <button
+              onClick={slideRight}
+              className="opacity-50 hover:opacity-100 cursor-pointer z-10"
+              aria-label="Scroll Right"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-10 h-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
     </section>
   );
 }
