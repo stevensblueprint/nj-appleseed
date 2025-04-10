@@ -1,5 +1,6 @@
 import Header from "../../_components/Header.jsx";
 import Hero from "../../_components/Hero.jsx";
+import OurManual from "../../_components/OurManual.jsx";
 import OurMission from "../../_components/OurMissions.jsx";
 
 export default function Home({ title, children }) {
@@ -15,6 +16,7 @@ export default function Home({ title, children }) {
         <Header />
         <Hero />
         <OurMission />
+        <OurManual />
         <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
     </html>
