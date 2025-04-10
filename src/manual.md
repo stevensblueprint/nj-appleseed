@@ -22,7 +22,7 @@ manual:
             Without insurance, it can be difficult to get a physician to see or treat you, unless you seek services at the emergency room of an acute care hospital, where they are obligated by law to provide care. If you do not have health insurance, there are options available to you in New Jersey, where you may be able to receive affordable or even free health care as a “self-pay” patient.  Below, we will discuss options available to you.
 
     - heading: |
-            Chapter 3: What to Do When You Recieve a Bill
+            Chapter 3: What to Do When You Receive a Bill
       id: chap3
       text: |
             Whether or not you are insured, at some point after you receive health care services that are not fully covered by insurance or by Charity Care, you will receive a bill from the provider or providers involved in your treatment. Read below to learn how to read that bill, how to figure out if it is correct – both with regard to what it is charging you for and how much -- and, once you know how much you really owe, how to work out a payment plan with the provider so that you can pay the bill.  We will also suggest how to proceed if you cannot agree with the provider on the amount you owe, or if you disagree with a decision by your insurance company to deny coverage or erroneously treat the bill as out-of-network.  
