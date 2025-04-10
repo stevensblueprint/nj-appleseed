@@ -1,5 +1,6 @@
 import Header from "../../_components/Header.jsx";
 import ManualHero from "../../_components/ManualHero.jsx";
+import Footer from "../../_components/Footer.jsx";
 
 
 export default function Manual({ title }) {
@@ -14,6 +15,7 @@ export default function Manual({ title }) {
       <body className="bg-gray-100 min-h-screen">
         <Header />
         <ManualHero />
+        <Footer/>
         </body>
     </html>
   );

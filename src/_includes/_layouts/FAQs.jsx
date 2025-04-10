@@ -1,7 +1,7 @@
 import Header from "../../_components/Header.jsx";
 import Footer from "../../_components/Footer.jsx";
 
-export default function About({ title }) {
+export default function FAQs({ title }) {
     return (
         <html lang="en">
               <head>
