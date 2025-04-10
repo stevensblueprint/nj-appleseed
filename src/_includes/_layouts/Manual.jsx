@@ -1,8 +1,8 @@
 import Header from "../../_components/Header.jsx";
-import Hero from "../../_components/Hero.jsx";
-import OurMission from "../../_components/OurMissions.jsx";
+import ManualHero from "../../_components/ManualHero.jsx";
 
-export default function Home({ title, children }) {
+
+export default function Manual({ title }) {
   return (
     <html lang="en">
       <head>
@@ -13,10 +13,8 @@ export default function Home({ title, children }) {
       </head>
       <body className="bg-gray-100 min-h-screen">
         <Header />
-        <Hero />
-        <OurMission />
-        <main className="container mx-auto px-4 py-8">{children}</main>
-      </body>
+        <ManualHero />
+        </body>
     </html>
   );
 }
