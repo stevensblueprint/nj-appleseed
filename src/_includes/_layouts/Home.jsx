@@ -1,6 +1,7 @@
 import Header from "../../_components/Header.jsx";
 import Hero from "../../_components/Hero.jsx";
 import OurMission from "../../_components/OurMissions.jsx";
+import Footer from "../../_components/Footer.jsx";
 
 export default function Home({ title, children }) {
   return (
@@ -15,6 +16,7 @@ export default function Home({ title, children }) {
         <Header />
         <Hero />
         <OurMission />
+        <Footer/>
         <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
     </html>

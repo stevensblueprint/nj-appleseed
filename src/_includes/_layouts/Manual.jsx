@@ -1,6 +1,7 @@
 import Header from "../../_components/Header.jsx";
 import ManualHero from "../../_components/ManualHero.jsx";
 import ManualComp from "../../_components/ManualComp.jsx";
+import Footer from "../../_components/Footer.jsx";
 
 export default function Manual({ title, manual }) {
   return (
@@ -15,6 +16,7 @@ export default function Manual({ title, manual }) {
         <Header />
         <ManualHero />
         <ManualComp manual={manual} />
+        <Footer/>
         </body>
     </html>
   );
