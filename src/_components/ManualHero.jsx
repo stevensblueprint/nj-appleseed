@@ -8,7 +8,7 @@ export default function ManualHero() {
           <p className="md:text-7xl max-w-2xl font-normal text-5xl pb-8 text-center">Explore our manual for resources on <b>medical debt.</b></p>
           <a
             href="#" // add path to pdf manual
-            className="bg-maroon px-6 py-3 flex flex-row  items-center justify-center rounded-lg"
+            className="bg-primary hover:bg-secondary px-6 py-3 flex flex-row  items-center justify-center rounded-lg"
             download={""} // add what we want the manual to be called when added
           >
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="px-2">
