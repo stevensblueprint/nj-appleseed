@@ -1,6 +1,6 @@
 import Header from "../../_components/Header.jsx";
 
-export default function About({ title }) {
+export default function Resources({ title }) {
     return (
         <html lang="en">
               <head>
