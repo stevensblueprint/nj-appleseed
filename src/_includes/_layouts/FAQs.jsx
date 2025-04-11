@@ -1,7 +1,4 @@
-import Header from "../../_components/Header.jsx";
-import Footer from "../../_components/Footer.jsx";
-
-export default function FAQs({ title }) {
+export default function FAQs({ title, comp }) {
     return (
         <html lang="en">
               <head>
@@ -11,8 +8,8 @@ export default function FAQs({ title }) {
                 <link rel="stylesheet" href="/css/styles.css" />
               </head>
               <body className="bg-gray-100 min-h-screen">
-                <Header />
-                <Footer />
+                <comp.Header />
+                <comp.Footer />
               </body>
             </html>
     );
