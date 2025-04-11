@@ -1,5 +1,3 @@
-import Header from "../../_components/Header.jsx";
-
 export default function NotFoundLayout() {
   return (
     <section>
