@@ -1,9 +1,4 @@
-import Header from "../../_components/Header.jsx";
-import Hero from "../../_components/Hero.jsx";
-import OurMission from "../../_components/OurMissions.jsx";
-import Footer from "../../_components/Footer.jsx";
-
-export default function Home({ title, children }) {
+export default function Home({ title, children, comp }) {
   return (
     <html lang="en">
       <head>
@@ -13,10 +8,10 @@ export default function Home({ title, children }) {
         <link rel="stylesheet" href="/css/styles.css" />
       </head>
       <body className="bg-gray-100 min-h-screen">
-        <Header />
-        <Hero />
-        <OurMission />
-        <Footer/>
+        <comp.Header />
+        <comp.Hero />
+        <comp.OurMissions />
+        <comp.Footer />
         <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
     </html>

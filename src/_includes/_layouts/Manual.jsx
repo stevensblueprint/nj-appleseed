@@ -1,9 +1,4 @@
-import Header from "../../_components/Header.jsx";
-import ManualHero from "../../_components/ManualHero.jsx";
-import ManualComp from "../../_components/ManualComp.jsx";
-import Footer from "../../_components/Footer.jsx";
-
-export default function Manual({ title, manual }) {
+export default function Manual({ title, manual, comp }) {
   return (
     <html lang="en">
       <head>
@@ -13,10 +8,10 @@ export default function Manual({ title, manual }) {
         <link rel="stylesheet" href="/css/styles.css" />
       </head>
       <body className="bg-gray-100 min-h-screen">
-        <Header />
-        <ManualHero />
-        <ManualComp manual={manual} />
-        <Footer/>
+        <comp.Header />
+        <comp.ManualHero />
+        <comp.ManualComp manual={manual} />
+        <comp.Footer/>
         </body>
     </html>
   );
