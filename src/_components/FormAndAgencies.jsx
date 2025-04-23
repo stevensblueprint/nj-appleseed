@@ -1,4 +1,4 @@
-export default function FormAndAgencies() {
+export default function FormAndAgencies(title, comp) {
   return (
     <>
       <section className="py-12 px-6 max-w-6xl mx-auto">
@@ -44,7 +44,7 @@ export default function FormAndAgencies() {
         </div>
       </section>
 
-      <section className="py-12 px-6 max-w-6xl mx-auto bg-gray-200">
+      <section className="py-12 px-6 max-w-6xl mx-auto">
         <h2 className="text-4xl font-light text-[#8A9A5B] mb-6">Agencies</h2>
         <article className="mb-8">links to agencies with whom to file complaints</article>
 
@@ -55,7 +55,7 @@ export default function FormAndAgencies() {
             </button>
             
             <div className="flex overflow-x-auto gap-4 py-4 px-12">
-              <div className="flex-shrink-0 w-full md:w-1/3 bg-white rounded-lg p-6 min-h-[250px] flex flex-col">
+              <div className="flex-shrink-0 w-full md:w-1/3 bg-gray-200 rounded-lg p-6 min-h-[250px] flex flex-col">
                 <img 
                   src="/assets/placeholder.png" 
                   alt="Agency placeholder" 
@@ -63,7 +63,7 @@ export default function FormAndAgencies() {
                 />
               </div>
               
-              <div className="flex-shrink-0 w-full md:w-1/3 bg-white rounded-lg p-6 min-h-[250px] flex flex-col justify-between">
+              <div className="flex-shrink-0 w-full md:w-1/3 bg-gray-200 rounded-lg p-6 min-h-[250px] flex flex-col justify-between">
                 <img 
                   src="/assets/placeholder.png" 
                   alt="Agency placeholder" 
@@ -71,7 +71,7 @@ export default function FormAndAgencies() {
                 />
               </div>
               
-              <div className="flex-shrink-0 w-full md:w-1/3 bg-white rounded-lg p-6 min-h-[250px] flex flex-col justify-between">
+              <div className="flex-shrink-0 w-full md:w-1/3 bg-gray-200 rounded-lg p-6 min-h-[250px] flex flex-col justify-between">
                 <img 
                   src="/assets/placeholder.png" 
                   alt="Agency placeholder" 

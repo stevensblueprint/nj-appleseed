@@ -10,6 +10,7 @@ export default function Resources({ title, comp }) {
               <body className="bg-gray-100 min-h-screen">
                 <comp.Header />
                 <comp.Footer />
+                <comp.FormAndAgencies/>
               </body>
             </html>
     );
