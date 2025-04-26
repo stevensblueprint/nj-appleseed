@@ -1,4 +1,4 @@
-export default function ManualHero({ text, image_url }) {
+export default function GenericHero({ text, image_url }) {
     return (
       <header>
       <div

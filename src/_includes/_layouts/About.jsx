@@ -1,4 +1,4 @@
-export default function About({ title, comp }) {
+export default function About({ title, text, comp }) {
     return (
         <html lang="en">
               <head>
@@ -10,6 +10,10 @@ export default function About({ title, comp }) {
               <body className="bg-gray-100 min-h-screen">
                 <comp.Header />
                 <comp.GenericHero text="About Us" image_url="/assets/image.png"/>
+                <p className="px-6 pb-12 text-lg max-w-6xl mx-auto">
+                  {text}
+                </p>
+                {/* <GenericDropdown title="" text="" title_formatting=""/> */}
                 <comp.Footer />
               </body>
             </html>
