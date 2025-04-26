@@ -9,6 +9,7 @@ export default function About({ title, comp }) {
               </head>
               <body className="bg-gray-100 min-h-screen">
                 <comp.Header />
+                <comp.GenericHero text="About Us" image_url="/assets/image.png"/>
                 <comp.Footer />
               </body>
             </html>
