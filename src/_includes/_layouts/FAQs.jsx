@@ -10,7 +10,7 @@ export default function FAQs({ title, faqs, text, comp }) {
               <body className="bg-gray-100 min-h-screen">
                 <comp.Header />
                 <comp.GenericHero text="Frequently Asked Questions" image_url="/assets/image.png"/>
-                <p className="px-6 pb-12 text-lg max-w-6xl mx-auto">
+                <p className="px-8 text-lg max-w-6xl mx-auto">
                   {text}
                 </p>
                 <div className="px-6 pb-12 max-w-6xl mx-auto">
