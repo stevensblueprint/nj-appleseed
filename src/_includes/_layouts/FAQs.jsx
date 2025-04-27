@@ -1,4 +1,4 @@
-export default function FAQs({ title, comp }) {
+export default function FAQs({ title, faqs, text, comp }) {
     return (
         <html lang="en">
               <head>
@@ -10,6 +10,14 @@ export default function FAQs({ title, comp }) {
               <body className="bg-gray-100 min-h-screen">
                 <comp.Header />
                 <comp.GenericHero text="Frequently Asked Questions" image_url="/assets/image.png"/>
+                <p className="px-6 pb-12 text-lg max-w-6xl mx-auto">
+                  {text}
+                </p>
+                <div className="px-6 pb-12 max-w-6xl mx-auto">
+                {faqs.map(( faq, index ) => (
+                  <comp.GenericDropdown contents={faq} index={index} />
+                ))}
+                </div>
                 <comp.Footer />
               </body>
             </html>

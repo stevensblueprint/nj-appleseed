@@ -1,4 +1,4 @@
-export default function About({ title, text, comp }) {
+export default function About({ title, text, organizations, comp }) {
     return (
         <html lang="en">
               <head>
@@ -13,7 +13,11 @@ export default function About({ title, text, comp }) {
                 <p className="px-6 pb-12 text-lg max-w-6xl mx-auto">
                   {text}
                 </p>
-                {/* <GenericDropdown title="" text="" title_formatting=""/> */}
+                <div className="px-6 pb-12 max-w-6xl mx-auto">
+                {organizations.map(( organization, index ) => (
+                  <comp.GenericDropdown contents={organization} index={index} />
+                ))}
+                </div>
                 <comp.Footer />
               </body>
             </html>
