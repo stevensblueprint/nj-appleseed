@@ -13,7 +13,7 @@ export default function About({ title, text, organizations, comp }) {
                 <p className="px-8 text-lg max-w-6xl mx-auto">
                   {text}
                 </p>
-                <div className="px-6 pb-12 max-w-6xl mx-auto">
+                <div className="px-6 pb-36 max-w-6xl mx-auto">
                 {organizations.map(( organization, index ) => (
                   <comp.GenericDropdown contents={organization} index={index} />
                 ))}
