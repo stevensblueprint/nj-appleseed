@@ -6,7 +6,7 @@ export default function ManualHero() {
       >
         <div className="z-10 flex flex-col p-10 text-black items-center">
           <p className="md:text-7xl max-w-2xl font-normal text-5xl pb-8 text-center">Explore our manual for resources on <b>medical debt.</b></p>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
           <a
             href="#" // add path to pdf manual
             className="bg-primary hover:bg-secondary px-6 py-3 flex flex-row  items-center justify-center rounded-lg"
