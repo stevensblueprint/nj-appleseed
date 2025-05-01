@@ -10,7 +10,7 @@ export default function Home({ title, children, comp }) {
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
         <comp.Hero />
-        <comp.OurMissions />
+        <comp.OurPurpose />
         <comp.Footer />
         <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
