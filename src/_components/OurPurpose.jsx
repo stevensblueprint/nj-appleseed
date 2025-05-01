@@ -1,6 +1,6 @@
 export default function OurPurpose() {
   return (
-    <section className="flex flex-col md:flex-row md:justify-between px-6 py-36 max-w-5xl mx-auto">
+    <section className="flex flex-col md:flex-row md:justify-between px-6 py-12 md:py-36 max-w-5xl mx-auto">
       <div className="flex flex-col max-w-xl">
         <h1 className="text-4xl font-bold text-dark-green">OUR PURPOSE</h1>
   
