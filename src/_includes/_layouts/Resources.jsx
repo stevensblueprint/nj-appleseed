@@ -11,6 +11,7 @@ export default function Resources({ title, comp }) {
                 <comp.Header />
                 <comp.GenericHero text="Resources & Tools" image_url="/assets/image.png"/>
                 <comp.Footer />
+                <comp.FormAndAgencies/>
               </body>
             </html>
     );
