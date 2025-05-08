@@ -4,17 +4,17 @@ import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 
 const site = lume({
-    src: "./src",
-    dest: "./output",
-    server: {
-      open: true,
-      page404: "./404.html",
-    },
-    // location: new URL(""),
-    watcher: {
-      debounce: 10,
-    },
-  });
+  src: "./src",
+  dest: "./output",
+  server: {
+    open: true,
+    page404: "./404.html",
+  },
+  // location: new URL(""),
+  watcher: {
+    debounce: 10,
+  },
+});
 
 site.use(jsx());
 site.use(
@@ -38,7 +38,7 @@ site.use(
       },
     },
   }),
-)
+);
 site.use(postcss());
 site.ignore("index.html");
 site.copy("styles.css");
