@@ -1,4 +1,4 @@
-export default function Home({ title, children, comp }) {
+export default function Home({ title, children, bestPractices, comp }) {
   return (
     <html lang="en">
       <head>
@@ -9,9 +9,14 @@ export default function Home({ title, children, comp }) {
       </head>
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
-        <h1>
-          Best Practices
-        </h1>
+        <comp.GenericHero text="Best Practices" image_url="/assets/image.png"/>
+        {bestPractices.map((practice, index) => (
+          <comp.Practice
+            key={index}
+            number={index + 1}
+            content={practice.content}
+          />
+        ))}
         <comp.Footer />
         <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
