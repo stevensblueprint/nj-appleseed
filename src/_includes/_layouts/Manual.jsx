@@ -11,8 +11,8 @@ export default function Manual({ title, manual, comp }) {
         <comp.Header />
         <comp.ManualHero />
         <comp.ManualComp manual={manual} />
-        <comp.Footer/>
-        </body>
+        <comp.Footer />
+      </body>
     </html>
   );
 }
