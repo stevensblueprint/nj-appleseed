@@ -1,3 +1,6 @@
+import React from "react";
+import ReactMarkdown from "react-markdown";
+
 export default function ManualComp({ manual }) {
   return (
     <section className="px-6 py-12 max-w-6xl mx-auto">
@@ -40,7 +43,7 @@ export default function ManualComp({ manual }) {
           <h1 className="text-4xl font-bold text-dark-green py-6">
             {chapter.heading}
           </h1>
-          <p className="text-lg"> {chapter.text}</p>
+          <p className="text-lg"><ReactMarkdown>{chapter.text}</ReactMarkdown></p>
         </section>
       ))}
     </section>
