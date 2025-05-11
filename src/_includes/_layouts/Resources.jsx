@@ -12,13 +12,10 @@ export default function Resources({ title, sections, comp }) {
                 <comp.GenericHero text="Resources & Tools" image_url="/assets/image.png"/>
                 
                 {sections.map((section, index) => (
-                  index % 2 === 0 ? (
-                    <comp.Carousel 
-                      key={`section-${index}`}
-                      first={section} 
-                      second={sections[index + 1] || { name: "", description: "", items: [] }} 
-                    />
-                  ) : null
+                  <comp.Carousel 
+                    key={`section-${index}`}
+                    first={section} 
+                  />
                 ))}
                 
                 <comp.Footer />

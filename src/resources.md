@@ -3,10 +3,9 @@ title: Resources & Tools
 layout: _layouts/Resources.jsx
 
 sections:
-  - name: Forms
+  - name: FORMS
     description: |
-      Here you can find various forms related to healthcare and medical debt in New Jersey.
-      These forms can help you navigate the healthcare system and manage your medical expenses.
+      Description here!
     items:
       - image: /assets/placeholder.png
         alt: Form placeholder
@@ -15,11 +14,9 @@ sections:
       - image: /assets/placeholder.png
         alt: Form placeholder
 
-  - name: Agencies
+  - name: AGENCIES
     description: |
-      Links to agencies with whom to file complaints or seek assistance regarding
-      medical debt issues. These agencies can provide guidance and support for resolving
-      disputes with healthcare providers or insurance companies.
+      Description here!
     items:
       - image: /assets/placeholder.png
         alt: Agency placeholder
@@ -28,10 +25,9 @@ sections:
       - image: /assets/placeholder.png
         alt: Agency placeholder
 
-  - name: Websites
+  - name: WEBSITES
     description: |
-      State websites having to do with charity care and medical assistance programs.
-      These resources can help you find information about available healthcare options.
+      Description here!
     items:
       - image: /assets/placeholder.png
         alt: Website placeholder
@@ -40,10 +36,9 @@ sections:
       - image: /assets/placeholder.png
         alt: Website placeholder
 
-  - name: Federal Poverty Level
+  - name: FEDERAL POVERTY LEVEL
     description: |
-      Information regarding federal poverty level guidelines and how they relate to
-      medical assistance eligibility and charity care programs.
+      Description here!
     items:
       - image: /assets/placeholder.png
         alt: FPL placeholder
@@ -52,10 +47,9 @@ sections:
       - image: /assets/placeholder.png
         alt: FPL placeholder
 
-  - name: Key Statutes
+  - name: KEY STATUTES
     description: |
-      Important state and federal laws related to medical debt, patient rights,
-      and healthcare billing practices in New Jersey.
+      Description here!
     items:
       - image: /assets/placeholder.png
         alt: Statute placeholder
