@@ -1,4 +1,4 @@
-export default function Resources({ title, comp }) {
+export default function Resources({ title, sections, comp }) {
     return (
         <html lang="en">
               <head>
@@ -10,8 +10,18 @@ export default function Resources({ title, comp }) {
               <body className="bg-gray-100 min-h-screen">
                 <comp.Header />
                 <comp.GenericHero text="Resources & Tools" image_url="/assets/image.png"/>
+                
+                {sections.map((section, index) => (
+                  index % 2 === 0 ? (
+                    <comp.Carousel 
+                      key={`section-${index}`}
+                      first={section} 
+                      second={sections[index + 1] || { name: "", description: "", items: [] }} 
+                    />
+                  ) : null
+                ))}
+                
                 <comp.Footer />
-                <comp.FormAndAgencies/>
               </body>
             </html>
     );
