@@ -9,6 +9,7 @@
     "build": "deno task lume",
     "serve": "deno task lume -s"
   },
+  "nodeModulesDir": "auto",
   "compilerOptions": {
     "types": ["lume/types.ts"],
     "jsx": "react-jsx",

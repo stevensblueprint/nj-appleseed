@@ -29,9 +29,9 @@ manual:
     text: |
       This chapter is for those who have health insurance of some kind – private insurance through your job or an individual policy bought on an insurance exchange, or through some public program like NJ FamilyCare, Medicaid or Medicare. Any kind of insurance is better than none, but policies differ not just in the monthly premiums you pay but also in: what benefits they provide and the scope of coverage, including the size of deductibles and co-pays; on pre-approval requirements; which providers are in or out of network; and what drugs are covered.
 
-      **Section 1: Understanding Your Plan—Co-pays, Co-insurance, Authorization, Appealing Denial of Benefits or Coverage**
+      ## Section 1: Understanding Your Plan—Co-pays, Co-insurance, Authorization, Appealing Denial of Benefits or Coverage
 
-      *Your ID Card*
+      ### YOUR ID CARD
 
       If you have health insurance, you should have an ID card, which contains important information about your plan. This section will help you understand what the card says and what it means or coverage under your plan.
 
@@ -41,27 +41,27 @@ manual:
       - Name and Phone Number of Primary Care Physician (PCP) if your plan requires you to have one.
       - etc...
 
-      *ID CARD GLOSSARY OF TERMS*
+      ### ID CARD GLOSSARY OF TERMS
 
       Here is what the terms mentioned above mean:
 
       TYPES OF PLANS
 
       Fully-Funded Plans (HMO. PPO, POS)—Most insurers have some sort of limitation on the health care providers you can see and still obtain insurance benefits.
-
-      Fully-Funded Plans (HMO. PPO, POS)—Most insurers have some sort of limitation on the health care providers you can see and still obtain insurance benefits.
       - **HMO**: The most restrictive plans are HMOs or Health Maintenance Organizations where, other than in an emergency, there is generally no coverage if you see a doctor who is outside of the insurance company’s network or not part of the HMO. You will probably have to pay the charge in full for such providers.
       - ...
+      - **Medicare**: The [federal Medicare program](https://www.govinfo.gov/content/pkg/USCODE-2011-title42/html/USCODE-2011-title42-chap7-subchapXVIII.htm), which covers people who are 65 or older or who have certain disabilities or conditions.
+      - ...
 
-      *IMPORTANT PLAN TERMS*
+      ### IMPORTANT PLAN TERMS
       
-      **Deductibles** A deductible is the amount the insured must pay out of pocket before the insurer is required to pay anything and it resets annually so you have to meet it again each year. There are too main types of deductibles—for in-network and for out-of- network care, usually with a separate deductible for each person covered by the plan and for a family plan, a deductible that applies to the entire family. If the deductible has not been satisfied and you incur medical charges, you have to pay the entire amount of the charge until the deductible for that year is reached (although you still get the benefit of any reduced charge that the insurance company has negotiated with the health provider for that particular type of service). Even when you have fully satisfied the in-network deductible, if you incur charges for care from an out-of-network provider, you must satisfy the out-of-network deductible separately. That is a good reason to stay in-network on top of the fact that even after the deductible is met and coverage kicks in, your insurer might cover a lower percentage of out-of-network costs—maybe 60 or 70% rather than 90%, for example.
+      **Deductibles**—A deductible is the amount the insured must pay out of pocket before the insurer is required to pay anything and it resets annually so you have to meet it again each year. There are too main types of deductibles—for in-network and for out-of- network care, usually with a separate deductible for each person covered by the plan and for a family plan, a deductible that applies to the entire family. If the deductible has not been satisfied and you incur medical charges, you have to pay the entire amount of the charge until the deductible for that year is reached (although you still get the benefit of any reduced charge that the insurance company has negotiated with the health provider for that particular type of service). Even when you have fully satisfied the in-network deductible, if you incur charges for care from an out-of-network provider, you must satisfy the out-of-network deductible separately. That is a good reason to stay in-network on top of the fact that even after the deductible is met and coverage kicks in, your insurer might cover a lower percentage of out-of-network costs—maybe 60 or 70% rather than 90%, for example.
 
       ***
       NOTE that deductibles do not apply to preventive testing/care, which are always covered in full, although you might be required to utilize in-network providers testing facilities or laboratories.
       ***
 
-      Co-Pay—A co-pay is a set fee that you pay every time you see a doctor or other health provider or pick up a prescription. It can vary with the type of health care or the type of prescription, ranging from as low as $0 to $50 or more for a regular office visit, but usually higher for a specialist and it tends to be higher still, as much as $100 or more, for an emergency room visit. Your ID card might also specify a co-pay for Urgent Care visits, which are increasingly replacing Emergency Room visits for times when medical care is needed right away for injuries or illnesses that are not serious enough to warrant a visit to the E.R. 
+      **Co-Pay**—A co-pay is a set fee that you pay every time you see a doctor or other health provider or pick up a prescription. It can vary with the type of health care or the type of prescription, ranging from as low as $0 to $50 or more for a regular office visit, but usually higher for a specialist and it tends to be higher still, as much as $100 or more, for an emergency room visit. Your ID card might also specify a co-pay for Urgent Care visits, which are increasingly replacing Emergency Room visits for times when medical care is needed right away for injuries or illnesses that are not serious enough to warrant a visit to the E.R. 
       
       Under the Affordable Care Act, or ACA (also widely referred to as “Obamacare”), which became law in 2010, no co-pay whatsoever can be charged for certain types of preventive care, including vaccinations, mammograms and colonoscopies. A major caveat is that if the test is not just being done as part of regular, periodic screening, but to diagnose a suspected illness or condition, perhaps because of symptoms that are present, the testing is no longer deemed preventive and the usual deductibles and co-pays apply.
   - heading: |
