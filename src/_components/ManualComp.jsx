@@ -43,7 +43,9 @@ export default function ManualComp({ manual }) {
           <h1 className="text-4xl font-bold text-dark-green py-6">
             {chapter.heading}
           </h1>
-          <p className="text-lg"><ReactMarkdown>{chapter.text}</ReactMarkdown></p>
+          <div className="flex flex-col gap-5">
+              <p className="text-lg"><ReactMarkdown>{chapter.text}</ReactMarkdown></p>
+          </div>
         </section>
       ))}
     </section>
