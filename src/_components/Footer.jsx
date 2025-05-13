@@ -1,7 +1,3 @@
-export default function Footer () {
-    return  (
-        <section>
-
-        </section>
-    );
+export default function Footer() {
+  return <section></section>;
 }

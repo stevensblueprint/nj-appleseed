@@ -10,7 +10,7 @@ export default function Carousel({ first }) {
             <button className="absolute left-0 z-10 text-4xl text-black">
               &#10094;
             </button>
-            
+
             <div className="flex overflow-x-auto gap-4 py-4 px-12">
               {first.items && first.items.map((item, index) => (
                 <div key={`first-item-${index}`} className="flex-shrink-0 w-full md:w-1/3 bg-gray-200 rounded-lg p-6 min-h-[250px] flex flex-col justify-between">
@@ -22,7 +22,7 @@ export default function Carousel({ first }) {
                 </div>
               ))}
             </div>
-            
+
             <button className="absolute right-0 z-10 text-4xl text-black">
               &#10095;
             </button>
