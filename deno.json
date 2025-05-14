@@ -1,12 +1,15 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.5.2/"
+    "lume/": "https://deno.land/x/lume@v2.5.2/",
+    "react": "https://esm.sh/react?pin=v135",
+    "react-markdown": "https://esm.sh/react-markdown@7?pin=v135"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s"
   },
+  "nodeModulesDir": "auto",
   "compilerOptions": {
     "types": ["lume/types.ts"],
     "jsx": "react-jsx",
