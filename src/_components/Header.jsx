@@ -21,8 +21,8 @@ export default function Header() {
           <div>
             <a href="/">
               <img
-                src="/assets/image.png"
-                alt="Placeholder Logo"
+                src="/assets/EndMedDebtLogo.png"
+                alt="End Medical Debt Logo"
                 className="max-h-24 max-w-36 md:max-w-48 md:max-h-24"
               ></img>
             </a>
