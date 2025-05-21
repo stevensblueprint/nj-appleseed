@@ -33,13 +33,13 @@ site.use(
             "text-color": "#333333",
             negative: "#ffffff",
             "background-grey": "#EBEBEB",
-            "footer-grey": "7D7D7D",
+            "footer-grey": "#B2B2B2",
           },
         },
       },
       plugins: [typography],
     },
-  }),
+  })
 );
 site.use(postcss());
 site.ignore("index.html");
