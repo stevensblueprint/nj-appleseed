@@ -2,7 +2,6 @@
 title: FAQs
 layout: _layouts/FAQs.jsx
 
-titleSize: text-2xl
 faqs:
   - title: I have a child who is sick, and we are not insured. What should I do?
     body: |
@@ -73,6 +72,7 @@ faqs:
   - title: I have received a summons and am being sued for a medical bill.  How do I determine whether I should file an answer, and what should I do if I cannot afford an attorney?
     body: |
       Review the court papers and take note of any deadline to respond and make sure to respond by that date because if you miss the deadline, it can result in a default judgment against you, even if you do not owe the debt and could have defeated the lawsuit. If you need extra time, you can ask the plaintiff suing you for such time, and if they refuse, you can ask the court.  If at all possible, get an attorney to advise you on how to proceed and help you defend the lawsuit, Appendix C provides information on how to find legal help, including free legal help if you meet the financial criteria.    
+      
       In the absence of a lawyer, you will have to determine on your own whether the plaintiff who is suing you has a valid claim and what defenses you might have to defeat the claim entirely or reduce the amount claimed. For example, if the debt was reported to a credit agency in violation of state law, it becomes automatically void and no one can sue you for it. Or if the debt is older than six years, it has expired and can no longer be sued on. Chapter 4 Section 3 of the Guide/Manual contains detailed information about the many possible defenses that might be available to you and about how to handle the lawsuit—from filing an Answer to the Complaint, to preparing for trial, defending yourself at trial and appealing if you lose. It also discusses the bankruptcy options. Appendix D-3 is a form for filing an Answer to a medical debt lawsuit that lists the possible defenses and Appendix D-4 is a form called a Certification of Service, that must be filed with the Answer showing that you served a copy of it on the opposing side.
 
   - title: I or a member of my family is sick or injured and needs an ambulance to take them to a hospital for emergency care. What should I do? 
