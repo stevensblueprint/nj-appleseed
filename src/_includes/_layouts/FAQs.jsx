@@ -13,8 +13,7 @@ export default function FAQs({ title, faqs, text, comp }) {
           text="Frequently Asked Questions"
           image_url="/assets/image.png"
         />
-        <p className="px-8 text-lg max-w-6xl mx-auto">{text}</p>
-        <div className="px-6 pb-12 max-w-6xl mx-auto">
+        <div className="px-6 pb-36 max-w-6xl mx-auto">
           {faqs.map((faq, index) => (
             <comp.GenericDropdown contents={faq} index={index} />
           ))}
