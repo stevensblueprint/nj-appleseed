@@ -9,7 +9,7 @@ export default function Home({ title, children, bestPractices, comp }) {
       </head>
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
-        <comp.GenericHero text="Best Practices" image_url="/assets/image.png"/>
+        <comp.GenericHero text="Best Practices" image_url="/assets/image.png" />
         {bestPractices.map((practice, index) => (
           <comp.Practice
             key={index}

@@ -21,7 +21,9 @@ export default function GenericDropdown({ contents, index }) {
         />
       </label>
       <div className="overflow-hidden max-h-0 peer-checked:max-h-screen w-full transition-all duration-300 px-3 peer-checked:pt-2 peer-checked:pb-[25px]">
-        <div className="prose prose-p:text-xl prose-p:leading-6 max-w-none"><ReactMarkdown>{contents.body}</ReactMarkdown></div>
+        <div className="prose prose-p:text-xl prose-p:leading-6 max-w-none">
+          <ReactMarkdown>{contents.body}</ReactMarkdown>
+        </div>
       </div>
     </div>
   );
