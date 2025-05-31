@@ -10,7 +10,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="flex bg-footer-grey p-16">
+    <footer className="flex bg-footer-grey p-4 sm:p-16">
       <div className="flex flex-col w-full sm:w-1/2 gap-4">
         <img
           src="/assets/EndMedDebtLogo.png"
@@ -23,17 +23,30 @@ export default function Footer() {
           with medical debt. For legal advice, consult an attorney. 
         </p>
       </div>
-      <div className="flex flex-col w-full sm:w-1/2 gap-4 text-right">
-        <div className="flex flex-row gap-6 justify-end">
-          {navigationLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="hover:text-gray-300 font-bold transition-colors"
-            >
-              {link.text}
-            </a>
-          ))}
+      <div className="flex flex-col w-full sm:w-1/2 gap-4 sm:text-right">
+        <div className="w-full">
+          <div className="grid grid-cols-2 gap-y-2 gap-x-6 md:hidden">
+            {navigationLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="hover:text-gray-300 font-bold transition-colors"
+              >
+                {link.text}
+              </a>
+            ))}
+          </div>
+          <div className="hidden md:flex md:flex-row md:gap-6 md:justify-end">
+            {navigationLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="hover:text-gray-300 font-bold transition-colors"
+              >
+                {link.text}
+              </a>
+            ))}
+          </div>
         </div>
         <p className="italic">
           New Jersey Appleseed Public Law Center @2025. All rights reserved.
