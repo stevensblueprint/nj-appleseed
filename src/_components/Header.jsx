@@ -1,11 +1,11 @@
 const navigationLinks = [
-    { href: "/about", text: "ABOUT" },
-    { href: "/faqs", text: "FAQs" },
-    { href: "/manual", text: "MANUAL" },
-    { href: "/videos", text: "VIDEOS" },
-    { href: "/resources", text: "RESOURCES & TOOLS" },
-    { href: "/practices", text: "BEST PRACTICES" },
-  ];
+  { href: "/about", text: "ABOUT" },
+  { href: "/faqs", text: "FAQs" },
+  { href: "/manual", text: "MANUAL" },
+  { href: "/videos", text: "VIDEOS" },
+  { href: "/resources", text: "RESOURCES & TOOLS" },
+  { href: "/practices", text: "BEST PRACTICES" },
+];
 
 export default function Header() {
   return (

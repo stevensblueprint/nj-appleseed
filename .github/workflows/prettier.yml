@@ -11,27 +11,8 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
-      - name: Set up Deno
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
 
-      - name: Run prettier check
-        run: deno fmt --check || true
-
-      - name: Run prettier format
-        run: deno fmt
-
-      - name: Check for changes
-        id: check_changes
+      - name: Run prettier -check
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git diff --exit-code || echo "Changes detected"
-
-      - name: Commit and push changes
-        if: steps.check_changes.outputs.exit-code != '0'
-        run: |
-          git add .
-          git commit -m "Auto format code with Prettier"
-          git push
+          npm ci
+          npm run format:check
