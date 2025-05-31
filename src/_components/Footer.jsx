@@ -9,22 +9,23 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="flex bg-footer-grey p-4 sm:p-16">
+    <footer className="flex flex-col sm:flex-row bg-footer-grey p-4 sm:p-16 gap-6 sm:gap-0">
       <div className="flex flex-col w-full sm:w-1/2 gap-4">
         <img
           src="/assets/EndMedDebtLogo.png"
           alt="End Medical Debt Logo"
-          className="max-h-24 max-w-36 md:max-w-48 md:max-h-24"
-        ></img>
-        <p>
+          className="max-h-20 max-w-32 sm:max-w-48 sm:max-h-24"
+        />
+        <p className="text-xs sm:text-base">
           DISCLAIMER: The information on this website and in the Manual is not
           legal advice. It is a source of information to help New Jerseyans deal
-          with medical debt. For legal advice, consult an attorney. 
+          with medical debt. For legal advice, consult an attorney.
         </p>
       </div>
       <div className="flex flex-col w-full sm:w-1/2 gap-4 sm:text-right">
         <div className="w-full">
-          <div className="grid grid-cols-2 gap-y-2 gap-x-6 md:hidden">
+          {/* 2-column grid on mobile */}
+          <div className="grid grid-cols-2 gap-y-2 gap-x-6 md:hidden text-xs sm:text-base">
             {navigationLinks.map((link) => (
               <a
                 key={link.href}
@@ -35,7 +36,8 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <div className="hidden md:flex md:flex-row md:gap-6 md:justify-end">
+          {/* Horizontal row on md+ */}
+          <div className="hidden md:flex md:flex-row md:gap-6 md:justify-end text-xs sm:text-base">
             {navigationLinks.map((link) => (
               <a
                 key={link.href}
@@ -47,7 +49,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <p className="italic">
+        <p className="italic text-xs sm:text-base">
           New Jersey Appleseed Public Law Center @2025. All rights reserved.
         </p>
       </div>

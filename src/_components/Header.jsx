@@ -67,7 +67,7 @@ function desktopNavigationLinks() {
         className={
           "text-base font-semibold py-2 transition-colors duration-200 " +
           (isManual
-            ? "bg-primary text-white rounded px-4 mx-1 hover:bg-primary/10 hover:text-primary"
+            ? "bg-primary text-white rounded px-6 mx-1 hover:bg-primary/10 hover:text-primary"
             : "px-5 hover:bg-gray-100 hover:text-primary rounded")
         }
       >
