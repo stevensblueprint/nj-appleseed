@@ -10,8 +10,8 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="flex bg-footer-grey">
-      <div className="flex flex-col">
+    <footer className="flex bg-footer-grey p-16">
+      <div className="flex flex-col w-full sm:w-1/2 gap-4">
         <img
           src="/assets/EndMedDebtLogo.png"
           alt="End Medical Debt Logo"
@@ -23,8 +23,8 @@ export default function Footer() {
           with medical debt. For legal advice, consult an attorney. 
         </p>
       </div>
-      <div className="flex flex-col">
-        <div>
+      <div className="flex flex-col w-full sm:w-1/2 gap-4 text-right">
+        <div className="flex flex-row gap-6 justify-end">
           {navigationLinks.map((link) => (
             <a
               key={link.href}
@@ -35,7 +35,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p>
+        <p className="italic">
           New Jersey Appleseed Public Law Center @2025. All rights reserved.
         </p>
       </div>
