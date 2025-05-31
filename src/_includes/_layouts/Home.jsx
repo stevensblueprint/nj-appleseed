@@ -12,7 +12,6 @@ export default function Home({ title, children, comp }) {
         <comp.MainHero />
         <comp.OurPurpose />
         <comp.Footer />
-        <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
     </html>
   );
