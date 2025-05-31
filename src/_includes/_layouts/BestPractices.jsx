@@ -18,7 +18,6 @@ export default function Home({ title, children, bestPractices, comp }) {
           />
         ))}
         <comp.Footer />
-        <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
     </html>
   );
