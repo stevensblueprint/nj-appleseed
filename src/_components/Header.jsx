@@ -1,10 +1,10 @@
 const navigationLinks = [
   { href: "/about", text: "ABOUT" },
   { href: "/faqs", text: "FAQs" },
-  { href: "/manual", text: "MANUAL" },
   { href: "/videos", text: "VIDEOS" },
   { href: "/resources", text: "RESOURCES & TOOLS" },
   { href: "/practices", text: "BEST PRACTICES" },
+  { href: "/manual", text: "MANUAL" },
 ];
 
 export default function Header() {
@@ -58,14 +58,23 @@ export default function Header() {
 }
 
 function desktopNavigationLinks() {
-  return navigationLinks.map((link) => (
-    <a
-      href={link.href}
-      className="text-base p-5 font-semibold hover:font-bold hover:underline underline-offset-4 decoration-2"
-    >
-      {link.text}
-    </a>
-  ));
+  return navigationLinks.map((link) => {
+    const isManual = link.href === "/manual";
+    return (
+      <a
+        key={link.href}
+        href={link.href}
+        className={
+          "text-base font-semibold py-2 transition-colors duration-200 " +
+          (isManual
+            ? "bg-primary text-white rounded px-6 mx-1 hover:bg-primary/10 hover:text-primary"
+            : "px-5 hover:bg-gray-100 hover:text-primary rounded")
+        }
+      >
+        {link.text}
+      </a>
+    );
+  });
 }
 
 function mobileNavigationLinks() {
