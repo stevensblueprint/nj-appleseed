@@ -12,9 +12,12 @@ export default function MainHero() {
           Empowering individuals to address the challenge of{" "}
           <span className="underline decoration-green">Medical Debt.</span>
         </p>
-        <button className="relative z-10 bg-primary hover:bg-secondary transition-colors duration-300 text-md md:text-xl font-bold py-3 px-10 mt-6 rounded-md">
+        <a
+          href="/manual"
+          className="relative z-10 bg-primary hover:bg-secondary transition-colors duration-300 text-md md:text-xl font-bold py-3 px-10 mt-6 rounded-md"
+        >
           Read The Manual
-        </button>
+        </a>
       </div>
     </header>
   );
