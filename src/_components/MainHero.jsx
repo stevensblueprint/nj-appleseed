@@ -10,12 +10,13 @@ export default function MainHero() {
       >
         <p className="relative z-10 md:text-5xl text-3xl md:leading-snug font-black max-w-full align-middle">
           Empowering individuals to address the challenge of{" "}
-          <span className="flex flex-col">
-            <span>Medical Debt.</span>
+          <span className="inline-block relative align-baseline">
+            Medical Debt.
             <img
               src="/assets/vector/underline.svg"
               alt="Underline"
-              className="w-[200px] sm:w-[300px]"
+              className="w-full max-w-[200px] sm:max-w-[320px] block -mt-1"
+              style={{ marginLeft: 0 }}
             />
           </span>
         </p>
