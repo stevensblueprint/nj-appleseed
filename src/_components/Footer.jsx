@@ -24,7 +24,6 @@ export default function Footer() {
       </div>
       <div className="flex flex-col w-full sm:w-1/2 gap-4 sm:text-right">
         <div className="w-full">
-          {/* 2-column grid on mobile */}
           <div className="grid grid-cols-2 gap-y-2 gap-x-6 md:hidden text-xs sm:text-base">
             {navigationLinks.map((link) => (
               <a
@@ -36,13 +35,12 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          {/* Horizontal row on md+ */}
           <div className="hidden md:flex md:flex-row md:gap-6 md:justify-end text-xs sm:text-base">
             {navigationLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="hover:text-gray-300 font-bold transition-colors"
+                className="hover:text-gray-300 font-bold whitespace-nowrap transition-colors"
               >
                 {link.text}
               </a>
