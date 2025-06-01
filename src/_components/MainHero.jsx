@@ -8,8 +8,9 @@ export default function MainHero() {
         className="flex flex-col justify-center items-start h-full w-full px-4 py-10 md:px-10 text-white max-w-lg md:max-w-3xl
         bg-gradient-to-r from-black from-30% via-black/80 via-87% to-transparent"
       >
-        <p className="relative z-10 md:text-5xl text-xl md:leading-snug font-black max-w-full align-middle">
-          Empowering individuals to address the challenge of Medical Debt.
+        <p className="relative z-10 md:text-5xl text-3xl md:leading-snug font-black max-w-full align-middle">
+          Empowering individuals to address the challenge of{" "}
+          <span className="underline decoration-green">Medical Debt.</span>
         </p>
         <button className="relative z-10 bg-primary hover:bg-secondary transition-colors duration-300 text-md md:text-xl font-bold py-3 px-10 mt-6 rounded-md">
           Read The Manual
