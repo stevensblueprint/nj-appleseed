@@ -7,7 +7,7 @@ export default function Home({ title, children, comp }) {
         <title>{title}</title>
         <link rel="stylesheet" href="/css/styles.css" />
       </head>
-      <body className="bg-gray-100 min-h-screen">
+      <body>
         <comp.Header />
         <comp.MainHero />
         <comp.OurPurpose />

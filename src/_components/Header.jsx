@@ -27,7 +27,7 @@ export default function Header() {
               ></img>
             </a>
           </div>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <label htmlFor="accordianMenu" className="cursor-pointer label">
               <svg
                 className="w-10 h-10 text-black"
@@ -45,11 +45,11 @@ export default function Header() {
               </svg>
             </label>
           </div>
-          <div className="max-md:hidden flex flex-row gap-6">
+          <div className="max-lg:hidden flex flex-row">
             {desktopNavigationLinks()}
           </div>
         </div>
-        <div className="md:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col gap-3 transition-all duration-300 px-3 pb-3">
+        <div className="lg:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col transition-all duration-300 pb-3">
           {mobileNavigationLinks()}
         </div>
       </nav>
@@ -67,7 +67,7 @@ function desktopNavigationLinks() {
         className={
           "text-base font-semibold py-2 transition-colors duration-200 " +
           (isManual
-            ? "bg-primary text-white rounded px-6 mx-1 hover:bg-primary/10 hover:text-primary"
+            ? "bg-primary text-white rounded px-5 mx-1 hover:bg-primary/10 hover:text-primary"
             : "px-5 hover:bg-gray-100 hover:text-primary rounded")
         }
       >
