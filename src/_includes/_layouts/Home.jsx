@@ -6,22 +6,22 @@ export default function Home({ title, children, comp }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title}</title>
         <link rel="stylesheet" href="/css/styles.css" />
-      </head>
-      {/* Google tag (gtag.js) */}
+        {/* Google tag (gtag.js) */}
       <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-00LR9GZHMZ"
       ></script>
-      <script>
-        {() => {
-          window.dataLayer = window.dataLayer || [];
+      <script dangerouslySetInnerHTML={{
+        __html:
+          `window.dataLayer = window.dataLayer || [];
           function gtag() {
             dataLayer.push(arguments);
           }
           gtag("js", new Date());
           gtag("config", "G-00LR9GZHMZ");
-        }}
-      </script>
+          `
+      }} />
+      </head>
       <body>
         <comp.Header />
         <comp.MainHero />
