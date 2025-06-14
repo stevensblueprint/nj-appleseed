@@ -1,4 +1,4 @@
-export default function Home({ title, comp }) {
+export default function Home({ title, organizations, comp }) {
   return (
     <html lang="en">
       <head>
@@ -27,6 +27,7 @@ export default function Home({ title, comp }) {
         <comp.Header />
         <comp.MainHero />
         <comp.OurPurpose />
+        <comp.AboutUs  organizations={organizations} />
         <comp.Footer />
       </body>
     </html>

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
-export default function GenericDropdown({ contents, index }) {
+export default function FAQDropdown({ contents, index }) {
   return (
     <div className="flex flex-col justify-center items-center w-full border-b-[1px] border-black pt-10">
       <input
