@@ -1,6 +1,5 @@
 export default function Footer() {
   const navigationLinks = [
-    { href: "/about", text: "ABOUT" },
     { href: "/faqs", text: "FAQs" },
     { href: "/videos", text: "VIDEOS" },
     { href: "/resources", text: "RESOURCES & TOOLS" },

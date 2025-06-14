@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 export default function GenericDropdown({ contents, index }) {
   return (
-    <div className="flex flex-col justify-center items-center w-full border-b-[1px] border-black pt-10">
+    <div className="flex flex-col justify-center items-center w-full border-b-[1px] border-black pt-8">
       <input
         type="checkbox"
         id={`accordion-item-${index}`}
@@ -11,9 +11,14 @@ export default function GenericDropdown({ contents, index }) {
       />
       <label
         htmlFor={`accordion-item-${index}`}
-        className="py-5 px-2 group cursor-pointer font-bold text-dark-green w-full flex justify-between items-center gap-4 md:gap-0"
+        className="py-2 md:py-5 group cursor-pointer font-bold text-primary w-full flex justify-between items-center gap-4 md:gap-0"
       >
-        <p className="text-xl md:text-3xl pr-5 leading-8">{contents.title}</p>
+        <p className="max-md:hidden text-xl md:text-3xl pr-5 leading-8">
+          {contents.title}
+        </p>
+        <p className="md:hidden text-2xl md:text-3xl pr-5 leading-8">
+          {contents.acronym}
+        </p>
         <img
           src="/assets/vector/dropdown_arrow.svg"
           alt="Down Arrow"
