@@ -13,8 +13,12 @@ export default function GenericDropdown({ contents, index }) {
         htmlFor={`accordion-item-${index}`}
         className="py-2 md:py-5 group cursor-pointer font-bold text-primary w-full flex justify-between items-center gap-4 md:gap-0"
       >
-        <p className="max-md:hidden text-xl md:text-3xl pr-5 leading-8">{contents.title}</p>
-        <p className="md:hidden text-2xl md:text-3xl pr-5 leading-8">{contents.acronym}</p>
+        <p className="max-md:hidden text-xl md:text-3xl pr-5 leading-8">
+          {contents.title}
+        </p>
+        <p className="md:hidden text-2xl md:text-3xl pr-5 leading-8">
+          {contents.acronym}
+        </p>
         <img
           src="/assets/vector/dropdown_arrow.svg"
           alt="Down Arrow"

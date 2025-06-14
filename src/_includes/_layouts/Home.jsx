@@ -27,7 +27,7 @@ export default function Home({ title, organizations, comp }) {
         <comp.Header />
         <comp.MainHero />
         <comp.OurPurpose />
-        <comp.AboutUs  organizations={organizations} />
+        <comp.AboutUs organizations={organizations} />
         <comp.Footer />
       </body>
     </html>
