@@ -28,7 +28,7 @@ site.use(
           colors: {
             primary: "#9D1535", // Maroon
             secondary: "#742a2a", // Darker Maroon
-            green: "#919F63",
+            green: "#599144",
             "dark-green": "#367800",
             "text-color": "#333333",
             negative: "#ffffff",

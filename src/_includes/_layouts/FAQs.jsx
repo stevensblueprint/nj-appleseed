@@ -31,7 +31,7 @@ export default function FAQs({ title, faqs, text, comp }) {
         />
         <div className="px-6 pb-36 max-w-6xl mx-auto">
           {faqs.map((faq, index) => (
-            <comp.GenericDropdown contents={faq} index={index} />
+            <comp.FAQDropdown contents={faq} index={index} />
           ))}
         </div>
         <comp.Footer />
