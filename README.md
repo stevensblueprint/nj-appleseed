@@ -44,3 +44,40 @@
    `deno task serve`
 
 4. You did it! You should see the project running on `http://localhost:3000`
+
+## Content Management System (CMS)
+
+To make it easier for NJ Appleseed contributors to manage content, we are setting
+up a Content Management System (CMS) using [LumeCMS](https://lume.land/cms/).
+
+The CMS configuration can be managed in _cms.ts.
+
+To run the CMS locally, you can use the following command:
+
+```bash
+deno task lume
+```
+
+The following content will be managed through the CMS:
+- **Manual Website Content**: The individual page of the manual will be managed. We will create
+a CMS collection for each of the individual sections of the manual. Each section
+will have its own markdown file (TODO: Create naming convention) and will be 
+placed in a folder called `manual`. We might have folders for each chapter such
+that the structure is like this:
+  ```
+  manual/
+    chapter-1/
+      section-1.md
+      section-2.md
+    chapter-2/
+      section-1.md
+      section-2.md
+  ```
+- **Manual PDF Uploads**: The manual PDF in both Spanish and English can be 
+changed through the CMS. We will need to use `cms.upload()`. More info can be found
+here: https://lume.land/cms/getting-started/uploads/ 
+- **Best Practices**: The best practices can be managed through a single document
+- **FAQ**: The FAQ can be managed through a single document
+- **Resources**: The resources can be managed through a single document
+- **Videos**: The videos can be managed through a single document
+- **Homepage**: The homepage can be managed through a single document

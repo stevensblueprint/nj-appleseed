@@ -1,6 +1,7 @@
 {
   "imports": {
     "lume/": "https://deno.land/x/lume@v2.5.2/",
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.11.5/",
     "react": "https://esm.sh/react?pin=v135",
     "react-markdown": "https://esm.sh/react-markdown@7?pin=v135"
   },
