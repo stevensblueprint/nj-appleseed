@@ -33,6 +33,7 @@ function DownloadButton({ href, text, backgroundColor, hoverColor }) {
   return (
     <a
       href={href}
+      download
       className={`${backgroundColor} ${hoverColor} text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md flex items-center justify-center w-full sm:w-auto`}
     >
       <img
