@@ -27,10 +27,10 @@ export default function Home({ title, children, bestPractices, comp }) {
         <comp.Header />
         <comp.GenericHero
           title="Best Practices"
-          description="Be sure to follow these steps in case of a medical emergency. "
+          description="Be sure to follow these steps in case of a medical emergency."
           image={{
-            src: "/assets/vector/group.svg",
-            alt: "group",
+            src: "/assets/vector/best_practices_hero.svg",
+            alt: "Best Practices",
           }}
         />
         {bestPractices.map((practice, index) => (

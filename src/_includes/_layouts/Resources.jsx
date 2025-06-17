@@ -27,10 +27,10 @@ export default function Resources({ title, sections, comp }) {
         <comp.Header />
         <comp.GenericHero
           title="Resources and Tools"
-          description="Be sure to follow these steps in case of a medical emergency. "
+          description="Explore the resources and tools outlined in our manual."
           image={{
-            src: "/assets/vector/group.svg",
-            alt: "group",
+            src: "/assets/vector/resources_hero.svg",
+            alt: "Resources and Tools",
           }}
         />
         {sections.map((section, index) => (

@@ -1,20 +1,15 @@
-import React from "react";
-
 export default function GenericHero({
-  comp,
   title,
   description,
-  button1,
-  button2,
   image,
 }) {
   return (
     <section className="grow flex space-between flex-col min-h-[600px] lg:flex-row lg:items-center relative overflow-hidden bg-primary text-white px-6 md:px-12 lg:px-32">
       <div className="py-8 md:py-16 lg:py-0 w-full lg:pr-16">
-        <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl leading-snug md:leading-[1.3] tracking-wide mb-4 md:mb-6 lg:mb-16">
+        <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl leading-snug md:leading-[1.3] tracking-wide mb-4">
           {title}
         </h1>
-        <p className="text-lg md:text-xl lg:text-2xl leading-snug md:leading-[1.3] mb-6 md:mb-10 lg:mb-14">
+        <p className="text-lg sm:text-xl leading-snug md:leading-[1.3] mb-6 md:mb-10 lg:mb-14">
           {description}
         </p>
       </div>

@@ -27,10 +27,10 @@ export default function Videos({ title, comp }) {
         <comp.Header />
         <comp.GenericHero
           title="Videos"
-          description="Be sure to follow these steps in case of a medical emergency. "
+          description="Watch these helpful videos to learn more about medical debt and how to manage it."
           image={{
-            src: "/assets/vector/group.svg",
-            alt: "group",
+            src: "/assets/vector/videos_hero.svg",
+            alt: "Videos",
           }}
         />
         <comp.Footer />

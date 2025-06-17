@@ -27,10 +27,10 @@ export default function FAQs({ title, faqs, text, comp }) {
         <comp.Header />
         <comp.GenericHero
           title="Frequently Asked Questions"
-          description="Be sure to follow these steps in case of a medical emergency. "
+          description="Find answers to common questions people have regarding medical debt."
           image={{
-            src: "/assets/vector/group.svg",
-            alt: "group",
+            src: "/assets/vector/faq_hero.svg",
+            alt: "FAQs",
           }}
         />
         <div className="px-6 pb-36 max-w-6xl mx-auto">
