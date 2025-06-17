@@ -1,8 +1,4 @@
-export default function GenericHero({
-  title,
-  description,
-  image,
-}) {
+export default function GenericHero({ title, description, image }) {
   return (
     <section className="grow flex space-between flex-col min-h-[600px] lg:flex-row lg:items-center relative overflow-hidden bg-primary text-white px-6 md:px-12 lg:px-32">
       <div className="py-8 md:py-16 lg:py-0 w-full lg:pr-16">
