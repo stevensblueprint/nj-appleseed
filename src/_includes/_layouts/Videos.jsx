@@ -25,6 +25,14 @@ export default function Videos({ title, comp }) {
       </head>
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
+        <comp.GenericHero
+          title="Videos"
+          description="Be sure to follow these steps in case of a medical emergency. "
+          image={{
+            src: "/assets/vector/group.svg",
+            alt: "group",
+          }}
+        />
         <comp.Footer />
       </body>
     </html>

@@ -1,20 +1,30 @@
-export default function GenericHero({ text, image_url }) {
+import React from "react";
+
+export default function GenericHero({
+  comp,
+  title,
+  description,
+  button1,
+  button2,
+  image,
+}) {
   return (
-    <header>
-      <div
-        className={`bg-[url(${image_url})] relative h-[158px] md:h-screen bg-cover bg-center flex items-center justify-center`}
-      >
-        <div className="z-10 flex p-0 md:p-10 h-0 md:h-screen text-black items-center overflow-hidden">
-          <p className="md:text-7xl max-w-5xl font-bold text-5xl text-center align-middle">
-            {text}
-          </p>
-        </div>
-      </div>
-      <div className="flex p-8 text-black items-center justify-center">
-        <p className="md:hidden max-w-2xl font-bold text-5xl text-center align-middle">
-          {text}
+    <section className="grow flex space-between flex-col min-h-[600px] lg:flex-row lg:items-center relative overflow-hidden bg-primary text-white px-6 md:px-12 lg:px-32">
+      <div className="py-8 md:py-16 lg:py-0 w-full lg:pr-16">
+        <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl leading-snug md:leading-[1.3] tracking-wide mb-4 md:mb-6 lg:mb-16">
+          {title}
+        </h1>
+        <p className="text-lg md:text-xl lg:text-2xl leading-snug md:leading-[1.3] mb-6 md:mb-10 lg:mb-14">
+          {description}
         </p>
       </div>
-    </header>
+      <div className="flex sm:w-full lg:w-3/4 justify-center p-2 sm:p-16 lg:max-w-[600px] lg:max-h-[550px] mb-8">
+        <img
+          src={image.src}
+          alt={image.alt}
+          className={image.className ?? ""}
+        />
+      </div>
+    </section>
   );
 }
