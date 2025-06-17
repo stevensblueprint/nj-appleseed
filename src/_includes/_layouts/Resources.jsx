@@ -26,10 +26,13 @@ export default function Resources({ title, sections, comp }) {
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
         <comp.GenericHero
-          text="Resources & Tools"
-          image_url="/assets/image.png"
+          title="Resources and Tools"
+          description="Explore the resources and tools outlined in our manual."
+          image={{
+            src: "/assets/vector/resources_hero.svg",
+            alt: "Resources and Tools",
+          }}
         />
-
         {sections.map((section, index) => (
           <comp.Carousel key={`section-${index}`} first={section} />
         ))}

@@ -25,7 +25,14 @@ export default function Home({ title, children, bestPractices, comp }) {
       </head>
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
-        <comp.GenericHero text="Best Practices" image_url="/assets/image.png" />
+        <comp.GenericHero
+          title="Best Practices"
+          description="Be sure to follow these steps in case of a medical emergency."
+          image={{
+            src: "/assets/vector/best_practices_hero.svg",
+            alt: "Best Practices",
+          }}
+        />
         {bestPractices.map((practice, index) => (
           <comp.Practice
             key={index}

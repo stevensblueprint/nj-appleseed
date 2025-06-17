@@ -26,8 +26,12 @@ export default function FAQs({ title, faqs, text, comp }) {
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
         <comp.GenericHero
-          text="Frequently Asked Questions"
-          image_url="/assets/image.png"
+          title="Frequently Asked Questions"
+          description="Find answers to common questions people have regarding medical debt."
+          image={{
+            src: "/assets/vector/faq_hero.svg",
+            alt: "FAQs",
+          }}
         />
         <div className="px-6 pb-36 max-w-6xl mx-auto">
           {faqs.map((faq, index) => (

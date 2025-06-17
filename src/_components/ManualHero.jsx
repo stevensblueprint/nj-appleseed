@@ -2,7 +2,7 @@ export default function ManualHero() {
   return (
     <header
       className="relative w-full h-80 sm:h-screen bg-center bg-cover"
-      style={{ backgroundImage: "url('/assets/manual_hero.png')" }}
+      style={{ backgroundImage: "url('/assets/manual_hero_2.png')" }}
     >
       <div className="absolute inset-0 bg-black/40" />
 
