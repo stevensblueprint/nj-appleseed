@@ -27,6 +27,7 @@ export default function Home({ title, comp }) {
         <comp.Header />
         <comp.MainHero />
         <comp.OurPurpose />
+        <iframe src="/assets/docs/ConsumerGuideEnglish.pdf" width="100%" height="600px"></iframe>
         <comp.Footer />
       </body>
     </html>

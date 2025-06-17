@@ -81,3 +81,10 @@ here: https://lume.land/cms/getting-started/uploads/
 - **Resources**: The resources can be managed through a single document
 - **Videos**: The videos can be managed through a single document
 - **Homepage**: The homepage can be managed through a single document
+
+
+ALternative:
+Each section of the manual is its own PDF.
+We add an Iframe to show the PDF for the manual. This way we can keep the design
+of the manual and makes it easier to manage the content. This content might also 
+be more appealing to users. 
