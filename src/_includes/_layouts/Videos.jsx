@@ -25,6 +25,14 @@ export default function Videos({ title, comp }) {
       </head>
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
+        <comp.GenericHero
+          title="Videos"
+          description="Watch these helpful videos to learn more about medical debt and how to manage it."
+          image={{
+            src: "/assets/vector/videos_hero.svg",
+            alt: "Videos",
+          }}
+        />
         <comp.Footer />
       </body>
     </html>
