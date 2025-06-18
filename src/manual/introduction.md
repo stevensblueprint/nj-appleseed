@@ -1,6 +1,5 @@
 ---
 type: chapter
-sections: TODO
 chapter: 0
 id: intro
 ---

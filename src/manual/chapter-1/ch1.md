@@ -1,7 +1,6 @@
 ---
 type: chapter
 chapter: 1
-sections: TODO
 id: ch1
 ---
 

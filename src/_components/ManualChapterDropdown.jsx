@@ -1,21 +1,11 @@
 export default function ManualChapterDropdown({ search }) {
-  const sections = search.pages("type=section");
-
-  // const Navigation = {
-  //   "Introduction": ["ch0-s0"],
-  //   "Chapter 1": ["ch1-s0", "ch1-s1", "ch1-s2"],
-  //   "Chapter 2": ["ch2-s0", "ch2-s1", "ch2-s2"],
-  //   "Chapter 3": ["ch3-s0", "ch3-s1", "ch3-s2"],
-  //   "Chapter 4": ["ch4-s0", "ch4-s1", "ch4-s2"],
-  // }
-
   const chapters = search
     .pages("type=chapter")
     .map((chapter) => {
       return {
         chapter: chapter.chapter,
         id: chapter.id,
-        sections: chapter.sections,
+        sections: search.pages(`type=section chapter=${chapter.chapter}`),
         content: chapter.content,
       };
     })
@@ -43,6 +33,15 @@ export default function ManualChapterDropdown({ search }) {
               src="/assets/vector/dropdown_arrow.svg"
               alternate="arrow"
             />
+            {chapter.sections.map((section) => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className="ml-4 text-sm text-secondary hover:text-primary"
+              >
+                {section.title}
+              </a>
+            ))}
             {/* TODO: Have a scrollable component where the chapter contents render */}
             {/* <p>{chapter.content}</p> */}
           </div>
