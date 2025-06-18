@@ -1,7 +1,24 @@
 export default function ManualChapterDropdown({ search }) {
   const sections = search.pages("type=section");
 
-  const chapters = sections.filter((section) => section.section === 0);
+  // const Navigation = {
+  //   "Introduction": ["ch0-s0"],
+  //   "Chapter 1": ["ch1-s0", "ch1-s1", "ch1-s2"],
+  //   "Chapter 2": ["ch2-s0", "ch2-s1", "ch2-s2"],
+  //   "Chapter 3": ["ch3-s0", "ch3-s1", "ch3-s2"],
+  //   "Chapter 4": ["ch4-s0", "ch4-s1", "ch4-s2"],
+  // }
+
+  const chapters = sections
+    .filter((section) => section.section === 0)
+    .map((chapter) => {
+      return {
+        chapter: chapter.chapter,
+        title: chapter.title,
+        id: chapter.id,
+      };
+    })
+    .sort((a, b) => a.chapter - b.chapter);
 
   // TODO: In the markdown files, add <div id="section-id">...</div>
   // to allow navigation to jump to those specific sections.
@@ -16,9 +33,9 @@ export default function ManualChapterDropdown({ search }) {
             className="flex items-center bg-background-grey md:px-12 py-4 rounded shadow"
           >
             <h2 className="text-lg text-primary font-bold">
-              {chapter.chapter_number === 0
+              {chapter.chapter === 0
                 ? "Introduction"
-                : `Chapter ${chapter.chapter_number}`}
+                : `Chapter ${chapter.chapter}`}
             </h2>
             <img
               className="ml-2 w-4 h-4 fill-primary"
