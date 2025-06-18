@@ -82,26 +82,27 @@ text based on the section that is passed to it.
 
 Manual File Structure:
 
-_data.yml (has 1 field type: section)
+\_data.yml (has 1 field type: section)
 introduction.md
 chapter-1/
+
 - ch1.md
 - ch1-s1.md
 - ch1-s2.md
 - ch1-s3.md
 - ch1-s4.md
-chapter-2/
+  chapter-2/
 - ch2.md
 - ch2-s1.md
 - ch2-s2.md
 - ch2-s3.md
 - ch2-s4.md
-chapter-3/
+  chapter-3/
 - ch3.md
 - ch3-s1.md
 - ch3-s2.md
 - ch3-s3.md
-chapter-4/
+  chapter-4/
 - ch4.md
 - ch4-s1.md
 - ch4-s2.md

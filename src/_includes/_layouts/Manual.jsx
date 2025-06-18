@@ -27,7 +27,7 @@ export default function Manual({ title, manual, comp }) {
         <comp.Header />
         <comp.ManualHero />
         <comp.ManualChapterDropdown />
-        <comp.ManualComp manual={manual} />
+        {/* <comp.ManualComp manual={manual} /> */}
         <comp.Footer />
       </body>
     </html>

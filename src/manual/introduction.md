@@ -15,6 +15,7 @@ medical debt in the first place, or help you reduce the
 amount of it, and to provide advice on how to deal with
 medical debt collectors and what to do if you are sued
 over a medical debt.
+
 Even if you currently have no medical debt, and
 have—or think you have—good health insurance, all it
 takes is for you or a member of your immediate family
