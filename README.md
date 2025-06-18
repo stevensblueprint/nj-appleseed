@@ -55,18 +55,24 @@ we will only show the text, no images, graphics, or other media.
 ch1-s0 stands for "Chapter 1, Section 0" and so on. All of these files have
 type section and are retrieved on the inital page load of /manual.
 
-Options for rendering the navigation bar:
+There are 2 types of files in the manual directory:
 
-1. hard code props into the component itself and render them
-   Pros: Easy to implement, no need for additional searches
-   Cons: Need to Maintain based on the manual structure
-
-2. use "section 0" to filter the chapter headers
-   Pros: dynamic, will adapt to structure
-   Cons: additional/unecessary search can impact performance
-
-FIXME: Option 1 might be redundant since we might have to make a call for
-all pages anyway to render since the content is not dynamic.
+1. **Chapter Files**: These files group sections together and guide the
+   rendering of the manual's navigation bar. Their metadata includes
+   ***
+   type: chapter
+   chapter: 1
+   id: ch1
+   ***
+2. **Section Files**: These files contain the actual content of each section
+   and are rendered when the user selects a section from the navigation bar.
+   Their metadata includes
+   ***
+   chapter: 1
+   section: 0
+   title: "CHAPTER 1"
+   id: ch1-s0
+   ***
 
 At any given time, the manual page will only show a single section. This is
 to limit the amount of text on the page and make it more manageable for the user.
@@ -76,39 +82,28 @@ text based on the section that is passed to it.
 
 Manual File Structure:
 
-\_data.yml (has 1 field type: section)
+_data.yml (has 1 field type: section)
 introduction.md
 chapter-1/
-ch1-s0.md
-ch1-s1.md
-ch1-s2.md
-ch1-s3.md
-ch1-s4.md
+- ch1.md
+- ch1-s1.md
+- ch1-s2.md
+- ch1-s3.md
+- ch1-s4.md
 chapter-2/
-ch2-s0.md
-ch2-s1.md
-ch2-s2.md
-ch2-s3.md
-ch2-s4.md
+- ch2.md
+- ch2-s1.md
+- ch2-s2.md
+- ch2-s3.md
+- ch2-s4.md
 chapter-3/
-ch3-s0.md
-ch3-s1.md
-ch3-s2.md
-ch3-s3.md
+- ch3.md
+- ch3-s1.md
+- ch3-s2.md
+- ch3-s3.md
 chapter-4/
-ch4-s0.md
-ch4-s1.md
-ch4-s2.md
-ch4-s3.md
-ch4-s4.md
-
-Each File Metadata:
-
-```yaml
----
-chapter: 1
-section: 0
-title: "CHAPTER 1"
----
-CONTENT - This is rendered in the viewing section
-```
+- ch4.md
+- ch4-s1.md
+- ch4-s2.md
+- ch4-s3.md
+- ch4-s4.md
