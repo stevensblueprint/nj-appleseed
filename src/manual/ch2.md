@@ -1,8 +1,7 @@
 ---
-title: >-
-  Section 1 Understanding Your Plan—Co-pays, Co-insurance, Authorization,
-  Appealing Denial of Benefits or Coverage
-id: ch1-section1
+chapter_number: 2
+title: "CHAPTER TWO: RIGHTS OF UNINSURED PATIENTS"
+id: ch2
 ---
 
 # Section 2: Understanding Your Plan—Co-pays, Co-insurance, Authorization, Appealing Denial of Benefits or Coverage
