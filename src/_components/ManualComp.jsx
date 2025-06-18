@@ -55,9 +55,5 @@ export default function ManualComp({ manual }) {
 }
 
 function DesktopChapterDropdown({ chapter }) {
-  return (
-    <div>
-      Content
-    </div>
-  );
+  return <div>Content</div>;
 }
