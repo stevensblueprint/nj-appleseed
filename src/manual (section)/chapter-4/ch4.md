@@ -1,7 +1,8 @@
 ---
-type: chapter
 chapter: 4
-id: ch4
+section: 0
+title: "Chapter Four"
+id: ch4-s0
 ---
 
 # CHAPTER FOUR: UNDERSTANDING THE COLLECTION PROCESS

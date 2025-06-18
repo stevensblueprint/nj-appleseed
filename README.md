@@ -108,3 +108,7 @@ chapter-1/
 - ch4-s2.md
 - ch4-s3.md
 - ch4-s4.md
+
+DUE TO HOW PEER CHECKED WORKS, WE CAN'T HIDE THE INDIVIDUAL SECTION FILES.
+
+Alternative

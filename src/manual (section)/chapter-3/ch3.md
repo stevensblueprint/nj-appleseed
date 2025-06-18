@@ -1,7 +1,8 @@
 ---
-type: chapter
 chapter: 3
-id: ch3
+section: 0
+title: "Chapter Three"
+id: ch3-s0
 ---
 
 # CHAPTER THREE: WHAT TO DO WHEN YOU RECEIVE A BILL

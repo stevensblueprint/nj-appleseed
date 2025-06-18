@@ -1,7 +1,8 @@
 ---
-type: chapter
 chapter: 0
-id: intro
+section: 0
+title: "Introduction"
+id: introduction
 ---
 
 # Introduction
