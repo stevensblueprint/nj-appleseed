@@ -27,6 +27,7 @@ export default function ManualSectionDropdown({ search }) {
         />
       ))}
 
+      {/* FIXME: EDIT THE SECTION BELOW TO STYLE THE NAVBAR */}
       <div className="flex flex-row items-end bg-background-grey rounded shadow overflow-x-auto">
         {sections.map((section) => (
           <label
@@ -41,7 +42,7 @@ export default function ManualSectionDropdown({ search }) {
         ))}
       </div>
 
-      {/* Content + section dropdowns */}
+      {/* Content Of Each Individual Section */}
       {sections.map((section) => (
         <section
           key={`content-${section.id}`}
