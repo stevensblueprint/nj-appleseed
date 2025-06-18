@@ -1,8 +1,8 @@
 ---
+type: chapter
 chapter: 1
-section: 0
-title: "CHAPTER 1"
-id: ch1-s0
+sections: TODO
+id: ch1
 ---
 
 # CHAPTER ONE: RIGHTS OF INSURED PATIENTS

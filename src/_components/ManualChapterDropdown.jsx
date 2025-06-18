@@ -9,13 +9,14 @@ export default function ManualChapterDropdown({ search }) {
   //   "Chapter 4": ["ch4-s0", "ch4-s1", "ch4-s2"],
   // }
 
-  const chapters = sections
-    .filter((section) => section.section === 0)
+  const chapters = search
+    .pages("type=chapter")
     .map((chapter) => {
       return {
         chapter: chapter.chapter,
-        title: chapter.title,
         id: chapter.id,
+        sections: chapter.sections,
+        content: chapter.content,
       };
     })
     .sort((a, b) => a.chapter - b.chapter);
