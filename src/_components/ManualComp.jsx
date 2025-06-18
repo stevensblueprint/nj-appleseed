@@ -3,7 +3,6 @@ import ReactMarkdown from "react-markdown";
 export default function ManualComp({ manual }) {
   return (
     <section className="px-6 py-12 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-dark-green mb-6">Full Manual</h1>
       {/* Include all the input values here */}
       {manual.map((chapter) => (
         <input
@@ -52,8 +51,4 @@ export default function ManualComp({ manual }) {
       ))}
     </section>
   );
-}
-
-function DesktopChapterDropdown({ chapter }) {
-  return <div>Content</div>;
 }
