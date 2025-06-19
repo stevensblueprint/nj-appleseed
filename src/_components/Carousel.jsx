@@ -4,7 +4,9 @@ export default function Carousel({ resource }) {
       <h2 className="text-2xl sm:text-4xl font-bold text-green mb-6">
         {resource.name}
       </h2>
-      <article className="mb-8">{resource.description}</article>
+      <article className="mb-8 italic text-base sm:text-xl">
+        {resource.description}
+      </article>
       <div className="relative">
         <div className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-4 py-4 px-4">
           {resource.items &&

@@ -16,23 +16,23 @@ resources:
         url: /assets/docs/AppendixC.pdf
 
   - name: FORMS & LETTERS
-    description: Appendix D.
+    description: Explore sample letters and forms in Appendix D that can help you handle medical debt, request payment plans, and respond to debt collectors or lawsuits.
     items:
-      - title: Letter
-        description: Form placeholder
-        url: /placeholder
-      - title: Letter
-        description: Form placeholder
-        url: /placeholder
-      - title: Letter
-        description: Form placeholder
-        url: /placeholder
-      - title: Letter
-        description: Form placeholder
-        url: /placeholder
-      - title: Letter
-        description: Form placeholder
-        url: /placeholder
+      - title: Letter Disputing Debt
+        description: A formal letter patients can send to healthcare providers or debt collectors to dispute all or part of a medical bill, asserting legal defenses and requesting that collection efforts stop.
+        url: /assets/docs/AppendixD-1.pdf
+      - title: Payment Plan Letter
+        description: A letter for negotiating a reasonable payment plan for medical debt, proposing monthly payments based on income and protections under the Louisa Carman Medical Debt Relief Act.
+        url: /assets/docs/AppendixD-2.pdf
+      - title: Answer To Complaint
+        description: A legal form for patients sued for medical debt to deny or contest the amount claimed and assert defenses, preserving their rights in court.
+        url: /assets/docs/AppendixD-3.pdf
+      - title: Certification of Service
+        description: A statement certifying that court papers have been properly filed with the court and served on the plaintiff or their attorney as required by law.
+        url: /assets/docs/AppendixD-4.pdf
+      - title: Letter Requesting Debt Validation
+        description: A letter for patients to request detailed verification of a medical debt from a debt collector within 30 days, pausing collection until validation is provided.
+        url: /assets/docs/AppendixD-5.pdf
 
   - name: WEBSITES
     description: |
