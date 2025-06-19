@@ -1,10 +1,15 @@
+---
+title: "Appendix A: Federally Qualified Health Centers (FQHC)"
+url: /resources/appendix-a.html
+---
+
 # Federally Qualified Health Care Centers (By County)
 
 The following is a list of the Federally Qualified Health Centers (FQHCs) in New Jersey. FQHCs are community-based primary care centers that provide essential healthcare services to underserved populations, often with a sliding fee scale, and accept patients with or without insurance. The list includes several that are not technically FQHCs because they do not receive federal funds but provide health care services on the same terms and are thus included. It also includes several locations that ofer dental services, a pharmacy and mobile services available from a van in certain counties on certain days, which are listed last for each county.
 
 Listed separately below the main list are 19 school-based FQHCs, also known as SBHCs, which provide healthcare services directly in schools, ofering primary, preventive, and sometimes specialized care to students.
 
-We have done our best to insure that this list is accurate and complete but we ask you, if you find any errors, including an FQHC that we inadvertently omitted or one that is on the list but should not be, please let us know so that we can improve the list and keep it up to date. 
+We have done our best to insure that this list is accurate and complete but we ask you, if you find any errors, including an FQHC that we inadvertently omitted or one that is on the list but should not be, please let us know so that we can improve the list and keep it up to date.
 
 ## Atlantic County
 
@@ -71,7 +76,7 @@ We have done our best to insure that this list is accurate and complete but we a
 **Southern Jersey Family Medical Centers—Mobile Medical Van Serving Atlantic County**
 Hammonton, NJ 08037-2018, 609-567-0434
 
-## Bergen County 
+## Bergen County
 
 **North Hudson Community Action Corporation Health Center at Englewood**
 197 S. Van Brunt St., Englewood, NJ 07631-4010, 201-537-4442
@@ -160,7 +165,7 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 785 W. Sherman Ave., Vineland NJ 08360-6913, 856-451-4700
 
 **CompleteCare Mobile Medical Unit, Wellness on Wheels (WOW) Mobile Unit**
-785 W. Sherman Ave., Vineland, NJ 08360-6913, 856-451-4700 
+785 W. Sherman Ave., Vineland, NJ 08360-6913, 856-451-4700
 
 ## Essex County
 
@@ -216,9 +221,9 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 741 Broadway, Newark, NJ 07104-4309, 973-483-1300
 
 **Zufall Health Center—Highlands Health Van**
-(Mobile Services—serving Essex and other counties) 973-328-3344 
+(Mobile Services—serving Essex and other counties) 973-328-3344
 
-## Gloucester County 
+## Gloucester County
 
 **CompleteCare Dental Professionals**
 335 Delsea Dr. N., Glassboro, NJ, 08028-1403, 856-451-4700
@@ -267,7 +272,7 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 361 State Route 31 Bldg. C, Flemington, NJ 08822-5796, 973-328-9100
 
 **Zufall Health Center Highlands Health Van (Mobile Services)**
-973-328-3344 
+973-328-3344
 
 ## Mercer County
 
@@ -301,7 +306,7 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 **Henry J. Austin Health Center—Mobile Health Unit**
 218 N. Broad St., Trenton, NJ 08608-1306, 609-278-5900
 
-## Middlesex County 
+## Middlesex County
 
 **Central Jersey Medical Center**
 1540 Roosevelt Ave., Carteret, NJ 07008-1330, 732-376-6650
@@ -371,7 +376,7 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 4 Atno Ave., Morristown, NJ, 07960-3802, 973-267-0002
 
 **Zufall Health Center—Highlands Health Van (Mobile Services)**
-973-328-3344 
+973-328-3344
 
 **Zufall Mobile Dental Van**
 17 S. Warren St., Dover, NJ 07801-4506, 973-328-3344
@@ -433,23 +438,23 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 ## Somerset County
 
 **Zufall Health Center Bridgewater**
-500 N. Bridge St., Bridgewater, NJ 08807-2135, 973-328-3344 
+500 N. Bridge St., Bridgewater, NJ 08807-2135, 973-328-3344
 
 **Zufall Health Center Somerville**
 71 4th St., Somerville, NJ 08876-3235, 908-526-2335
 
 **Zufall Health Center—Highlands Health Van (Mobile Services)**
-973.328.3344 
+973.328.3344
 
-## Sussex County 
+## Sussex County
 
 **Zufall Health Center Sussex**
 238 Spring St., Newton, NJ 07860-2115, 973-862-6650
 
 **Zufall Health Center—Highlands Health Van (Mobile Services)**
-973.328.3344 
+973.328.3344
 
-## Union County 
+## Union County
 
 **Neighborhood Health Center Elizabeth**
 184 1st St., #2, Elizabeth, NJ 07206-1855, 908-355-4459
@@ -472,10 +477,9 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 755 Memorial Pkwy, Suite 300, Phillipsburg, NJ, 908-847-3300
 
 **Zufall Health Center—Highlands Health Van (Mobile Services)**
-973-328-3344 
+973-328-3344
 
 # SCHOOL—BASED FQHCs (SBHCs)
-
 
 ## Atlantic County
 
@@ -525,7 +529,7 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 ## Hudson County
 
 **North Hudson Community Action Corporation Health Center at Union City High School**
-2500 Kennedy Blvd., Union City, NJ 07087-2295, 201-538-7888 
+2500 Kennedy Blvd., Union City, NJ 07087-2295, 201-538-7888
 
 ## Mercer County
 
@@ -535,7 +539,7 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 **Henry J. Austin Health Center at PJ Hill Elementary School**
 1010 E. State St., Trenton, NJ 08609-1506, 609-656-4980
 
-## Ocean County 
+## Ocean County
 
 **Ocean Health Initiatives—Clifton Avenue School Based Health Center**
 625 Clifton Ave., Lakewood, NJ 732-719-9015
@@ -546,5 +550,4 @@ S. 8th St. & Carl Miller Blvd., Camden, NJ 08104, 856-541-4926
 ## Somerset County
 
 **Zufall SBHC at Hillcrest—Hamilton Schools**
-500 Franklin Blvd., Somerset, NJ 08873-3030 
-
+500 Franklin Blvd., Somerset, NJ 08873-3030

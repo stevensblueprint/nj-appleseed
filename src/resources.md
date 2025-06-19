@@ -7,7 +7,7 @@ resources:
     items:
       - title: Federally Qualified Health Centers (FQHC)
         description: Form placeholder
-        url: /placeholder
+        url: /resources/appendix-a.html
       - title: Federally Qualified Health Centers (FQHC)
         description: Form placeholder
         url: /placeholder

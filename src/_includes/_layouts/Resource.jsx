@@ -1,4 +1,6 @@
-export default function Resources({ title, comp }) {
+import ReactMarkdown from "react-markdown";
+
+export default function Resources({ title, comp, content }) {
   return (
     <html lang="en">
       <head>
@@ -25,7 +27,9 @@ export default function Resources({ title, comp }) {
       </head>
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
-        {/* TODO: This is a generic page for resources */}
+        <ReactMarkdown className="prose max-w-none">
+          {String(content)}
+        </ReactMarkdown>
         <comp.Footer />
       </body>
     </html>
