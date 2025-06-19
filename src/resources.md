@@ -1,38 +1,73 @@
 ---
 title: Resources & Tools
 layout: _layouts/Resources.jsx
-
-sections:
+resources:
   - name: AGENCIES
     description: |
-      Description here!
+      Appendix A, B, and C.
     items:
-      - image: /assets/placeholder.png
-        alt: Form placeholder
-      - image: /assets/placeholder.png
-        alt: Form placeholder
-      - image: /assets/placeholder.png
-        alt: Form placeholder
+      - title: Federally Qualified Health Centers (FQHC)
+        description: Form placeholder
+        url: /placeholder TODO: This will be a route to a page
+      - title: Federally Qualified Health Centers (FQHC)
+        description: Form placeholder
+        url: /placeholder TODO: This will be a route to a page
+      - title: Federally Qualified Health Centers (FQHC)
+        description: Form placeholder
+        url: /placeholder TODO: This will be a route to a page
 
   - name: FORMS & LETTERS
     description: |
-      Description here!
+      Appendix D.
     items:
-      - image: /assets/placeholder.png
-        alt: Agency placeholder
-      - image: /assets/placeholder.png
-        alt: Agency placeholder
-      - image: /assets/placeholder.png
-        alt: Agency placeholder
+      - title: Letter
+        description: Form placeholder
+        url: /placeholder TODO: This will be a download
+      - title: Letter
+        description: Form placeholder
+        url: /placeholder TODO: This will be a download
+      - title: Letter
+        description: Form placeholder
+        url: /placeholder TODO: This will be a download
+      - title: Letter
+        description: Form placeholder
+        url: /placeholder TODO: This will be a download
+      - title: Letter
+        description: Form placeholder
+        url: /placeholder TODO: This will be a download
 
   - name: WEBSITES
     description: |
-      Description here!
+      Helpful websites.
     items:
-      - image: /assets/placeholder.png
-        alt: Website placeholder
-      - image: /assets/placeholder.png
-        alt: Website placeholder
-      - image: /assets/placeholder.png
-        alt: Website placeholder
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
+      - title: Example Website
+        description: This is an example website.
+        url: https://example.com TODO: This will be a link to an external website
 ---

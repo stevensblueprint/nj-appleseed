@@ -1,4 +1,4 @@
-export default function Resources({ title, resources, comp }) {
+export default function Resources({ title, comp }) {
   return (
     <html lang="en">
       <head>
@@ -25,17 +25,7 @@ export default function Resources({ title, resources, comp }) {
       </head>
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
-        <comp.GenericHero
-          title="Resources and Tools"
-          description="Explore the resources and tools outlined in our manual."
-          image={{
-            src: "/assets/vector/resources_hero.svg",
-            alt: "Resources and Tools",
-          }}
-        />
-        {sections.map((section, index) => (
-          <comp.Carousel key={`section-${index}`} resources={resources} />
-        ))}
+        {/* TODO: This is a generic page for resources */}
         <comp.Footer />
       </body>
     </html>
