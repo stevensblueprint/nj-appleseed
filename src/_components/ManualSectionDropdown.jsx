@@ -38,18 +38,23 @@ export default function ManualSectionDropdown({ search }) {
         ).map(([chapter, chapterSections]) => (
           <div className="relative group" key={`chapter-${chapter}`}>
             <div className="cursor-pointer px-8 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white">
-              Chapter {chapter}
+              {/* // FIXME: If section is 0 add the label htmlFor here */}
+              <label htmlFor={`${chapterSections[0].id}`}>
+                {Number(chapter) === 0 ? "Introduction" : `Chapter ${chapter}`}
+              </label>
             </div>
             <div className="absolute top-full left-0 mt-0 min-w-max hidden group-hover:flex flex-col bg-white rounded shadow-lg z-10">
-              {chapterSections.map((section) => (
-                <label
-                  htmlFor={section.id}
-                  key={`label-${section.id}`}
-                  className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary whitespace-nowrap"
-                >
-                  {section.title}
-                </label>
-              ))}
+              {chapterSections
+                .filter((section) => section.section !== 0) // Only include sections that are not 0
+                .map((section) => (
+                  <label
+                    htmlFor={section.id}
+                    key={`label-${section.id}`}
+                    className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary whitespace-nowrap"
+                  >
+                    {section.title}
+                  </label>
+                ))}
             </div>
           </div>
         ))}
