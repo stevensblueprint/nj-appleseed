@@ -49,7 +49,7 @@
 
 In the 'manual' directory there are several markdown files divided into
 subdirectories based on chapter. This only includes the core written content
-of the manual. No endnotes or appendix (the latter is addressed in the 
+of the manual. No endnotes or appendix (the latter is addressed in the
 Resources & Tools) page.
 
 ch1-s0 stands for "Chapter 1, Section 0" and so on. All of these files have
@@ -59,12 +59,16 @@ There are 2 types of files in the manual directory:
 
 1. **Chapter Files**: These files group sections together and guide the
    rendering of the manual's navigation bar. Their metadata includes
+
    ***
+
    chapter: 1
    section: 0
    title: "Chapter One"
    id: ch1-s0
+
    ***
+
    Note the `section` field is always 0 for chapter files.
 
 2. **Section Files**: These files contain the actual content of each section
