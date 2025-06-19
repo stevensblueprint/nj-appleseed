@@ -29,7 +29,7 @@ export default function ManualSectionDropdown({ search }) {
       ))}
 
       {/* Labels for inputs and styling for manual dropdown */}
-      <div className="flex flex-row rounded relative">
+      <div className="flex flex-wrap md:flex-row flex-col rounded relative">
         {Object.entries(
           sections.reduce((acc, section) => {
             acc[section.chapter] = acc[section.chapter] || [];
@@ -37,14 +37,17 @@ export default function ManualSectionDropdown({ search }) {
             return acc;
           }, {}),
         ).map(([chapter, chapterSections]) => (
-          <div className="relative group" key={`chapter-${chapter}`}>
+          <div
+            className="relative group focus-within:block"
+            key={`chapter-${chapter}`}
+          >
             <label
               htmlFor={`${chapterSections[0].id}`}
-              className="cursor-pointer bg-background-grey px-8 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white"
+              className="cursor-pointer block w-full bg-background-grey px-8 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white"
             >
               {Number(chapter) === 0 ? "Introduction" : `Chapter ${chapter}`}
             </label>
-            <div className="absolute top-full left-0 mt-2 min-w-max hidden group-hover:flex flex-col bg-white rounded shadow-lg z-10">
+            <div className="absolute top-full left-0 w-full md:min-w-max hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10">
               {chapterSections
                 .filter((section) => section.section !== 0) // Only include sections that are not 0
                 .map((section) => (
