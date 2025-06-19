@@ -5,6 +5,6 @@ title: "Section 1"
 id: ch2-s1
 ---
 
-## Section 2: Where to Receive Care – Acute Care Hospitals and Federally Qualified Health Centers
+## Section 1: Where to Receive Care – Acute Care Hospitals and Federally Qualified Health Centers
 
 Content
