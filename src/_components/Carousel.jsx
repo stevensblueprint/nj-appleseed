@@ -1,6 +1,6 @@
 export default function Carousel({ resource }) {
   return (
-    <section className="py-12 px-6 max-w-6xl mx-auto">
+    <section className="mt-4 mb-4 py-4 sm:py-8 px-6 max-w-6xl mx-auto">
       <h2 className="text-2xl sm:text-4xl font-bold text-green mb-6">
         {resource.name}
       </h2>
@@ -30,7 +30,7 @@ export default function Carousel({ resource }) {
             ))}
         </div>
       </div>
-      <div className="border-b-4 border-dark-green mt-12"></div>
+      <div className="border-b-4 border-dark-green pt-12"></div>
     </section>
   );
 }
