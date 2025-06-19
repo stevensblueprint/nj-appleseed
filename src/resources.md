@@ -4,6 +4,7 @@ layout: _layouts/Resources.jsx
 resources:
   - name: AGENCIES
     description: Explore trusted organizations by county that are ready to support you. Find essential healthcare providers and legal resources in Appendix A, B, and C.
+    icon: /assets/vector/hospital.svg
     items:
       - title: Federally Qualified Health Centers (FQHC)
         description: Accessible, community-based clinics offering quality healthcare for everyone—regardless of insurance status—often with affordable, sliding-scale fees.
@@ -17,6 +18,7 @@ resources:
 
   - name: FORMS & LETTERS
     description: Explore sample letters and forms in Appendix D that can help you handle medical debt, request payment plans, and respond to debt collectors or lawsuits.
+    icon: /assets/vector/letter.svg
     items:
       - title: Letter Disputing Debt
         description: A formal letter patients can send to healthcare providers or debt collectors to dispute all or part of a medical bill, asserting legal defenses and requesting that collection efforts stop.
@@ -37,6 +39,7 @@ resources:
   - name: WEBSITES
     description: |
       Helpful Websites and Links to New Jersey Courts.
+    icon: /assets/vector/website.svg
     items:
       - title: "Surviving Debt, National Consumer Law Center Digital Book that has chapters on Medical Debt (chapter 11) and Collection Lawsuits (chapter 4)"
         description: ""

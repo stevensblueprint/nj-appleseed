@@ -1,9 +1,13 @@
 export default function Carousel({ resource }) {
   return (
     <section className="mt-4 mb-4 py-4 sm:py-8 px-6 max-w-6xl mx-auto">
-      <h2 className="text-2xl sm:text-4xl font-bold text-green mb-6">
-        {resource.name}
-      </h2>
+      <div className="flex gap-2 items-center mb-6">
+        <h2 className="text-2xl sm:text-4xl font-bold text-green">
+          {resource.name}
+        </h2>
+        <img src={resource.icon} alt="" className="w-8 h-8" />
+      </div>
+
       <article className="mb-8 italic text-base sm:text-xl">
         {resource.description}
       </article>
