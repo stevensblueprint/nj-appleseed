@@ -36,7 +36,6 @@ export default function Resources({ title, sections, comp }) {
         {sections.map((section, index) => (
           <comp.Carousel key={`section-${index}`} first={section} />
         ))}
-
         <comp.Footer />
       </body>
     </html>
