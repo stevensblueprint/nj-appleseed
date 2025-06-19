@@ -49,8 +49,8 @@
 
 In the 'manual' directory there are several markdown files divided into
 subdirectories based on chapter. This only includes the core written content
-of the manual. No Endnotes, Appendix, Or Reference. Due to the length of the content,
-we will only show the text, no images, graphics, or other media.
+of the manual. No endnotes or appendix (the latter is addressed in the 
+Resources & Tools) page.
 
 ch1-s0 stands for "Chapter 1, Section 0" and so on. All of these files have
 type section and are retrieved on the inital page load of /manual.
@@ -60,55 +60,26 @@ There are 2 types of files in the manual directory:
 1. **Chapter Files**: These files group sections together and guide the
    rendering of the manual's navigation bar. Their metadata includes
    ***
-   type: chapter
    chapter: 1
-   id: ch1
+   section: 0
+   title: "Chapter One"
+   id: ch1-s0
    ***
+   Note the `section` field is always 0 for chapter files.
+
 2. **Section Files**: These files contain the actual content of each section
    and are rendered when the user selects a section from the navigation bar.
    Their metadata includes
    ***
    chapter: 1
-   section: 0
-   title: "CHAPTER 1"
-   id: ch1-s0
+   section: 1
+   title: "Section 1"
+   id: ch1-s1
    ***
+
+Follow the naming convention chX-sY.md, where X is the chapter number
+and Y is the section number. Use this for both the name of the markdown file
+and the `id` field in the metadata.
 
 At any given time, the manual page will only show a single section. This is
 to limit the amount of text on the page and make it more manageable for the user.
-
-There will be some sort of ManualContent component that is used to render the
-text based on the section that is passed to it.
-
-Manual File Structure:
-
-\_data.yml (has 1 field type: section)
-introduction.md
-chapter-1/
-
-- ch1.md
-- ch1-s1.md
-- ch1-s2.md
-- ch1-s3.md
-- ch1-s4.md
-  chapter-2/
-- ch2.md
-- ch2-s1.md
-- ch2-s2.md
-- ch2-s3.md
-- ch2-s4.md
-  chapter-3/
-- ch3.md
-- ch3-s1.md
-- ch3-s2.md
-- ch3-s3.md
-  chapter-4/
-- ch4.md
-- ch4-s1.md
-- ch4-s2.md
-- ch4-s3.md
-- ch4-s4.md
-
-DUE TO HOW PEER CHECKED WORKS, WE CAN'T HIDE THE INDIVIDUAL SECTION FILES.
-
-Alternative
