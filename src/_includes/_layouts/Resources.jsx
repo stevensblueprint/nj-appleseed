@@ -33,8 +33,8 @@ export default function Resources({ title, resources, comp }) {
             alt: "Resources and Tools",
           }}
         />
-        {sections.map((section, index) => (
-          <comp.Carousel key={`section-${index}`} resources={resources} />
+        {resources.map((resource, index) => (
+          <comp.Carousel key={`section-${index}`} resource={resource} />
         ))}
         <comp.Footer />
       </body>

@@ -3,38 +3,36 @@ title: Resources & Tools
 layout: _layouts/Resources.jsx
 resources:
   - name: AGENCIES
-    description: |
-      Appendix A, B, and C.
+    description: Appendix A, B, and C.
     items:
       - title: Federally Qualified Health Centers (FQHC)
         description: Form placeholder
-        url: /placeholder TODO: This will be a route to a page
+        url: /placeholder
       - title: Federally Qualified Health Centers (FQHC)
         description: Form placeholder
-        url: /placeholder TODO: This will be a route to a page
+        url: /placeholder
       - title: Federally Qualified Health Centers (FQHC)
         description: Form placeholder
-        url: /placeholder TODO: This will be a route to a page
+        url: /placeholder
 
   - name: FORMS & LETTERS
-    description: |
-      Appendix D.
+    description: Appendix D.
     items:
       - title: Letter
         description: Form placeholder
-        url: /placeholder TODO: This will be a download
+        url: /placeholder
       - title: Letter
         description: Form placeholder
-        url: /placeholder TODO: This will be a download
+        url: /placeholder
       - title: Letter
         description: Form placeholder
-        url: /placeholder TODO: This will be a download
+        url: /placeholder
       - title: Letter
         description: Form placeholder
-        url: /placeholder TODO: This will be a download
+        url: /placeholder
       - title: Letter
         description: Form placeholder
-        url: /placeholder TODO: This will be a download
+        url: /placeholder
 
   - name: WEBSITES
     description: |
@@ -42,32 +40,32 @@ resources:
     items:
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
       - title: Example Website
         description: This is an example website.
-        url: https://example.com TODO: This will be a link to an external website
+        url: https://example.com
 ---
