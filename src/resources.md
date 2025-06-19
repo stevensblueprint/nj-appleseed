@@ -36,36 +36,36 @@ resources:
 
   - name: WEBSITES
     description: |
-      Helpful websites.
+      Helpful Websites and Links to New Jersey Courts.
     items:
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
-      - title: Example Website
-        description: This is an example website.
-        url: https://example.com
+      - title: "Surviving Debt, National Consumer Law Center Digital Book that has chapters on Medical Debt (chapter 11) and Collection Lawsuits (chapter 4)"
+        description: ""
+        url: "https://library.nclc.org/book/surviving-debt"
+      - title: "Stopping Debt Collection Harassment: Consumer Debt Advice from the National Consumer Law Center"
+        description: ""
+        url: "https://library.nclc.org/article/stopping-debt-collection-harassment-consumer-debt-advice-nclc"
+      - title: "Glossary of Legal Terms, National Consumer Law Center"
+        description: ""
+        url: "https://www.lsnjlaw.org/tools/glossary"
+      - title: "Debt Collection FAQs, Information from the Federal Trade Commission"
+        description: ""
+        url: "https://consumer.ftc.gov/articles/debt-collection-faqs"
+      - title: "Information on How to Represent Yourself in Court (Pro Se)"
+        description: ""
+        url: "https://www.njcourts.gov/self-help/represent-yourself"
+      - title: "Information About Special Civil Part"
+        description: ""
+        url: "https://www.njcourts.gov/self-help/special-civil-court"
+      - title: "How to Answer in Special Civil Part"
+        description: ""
+        url: "https://www.njcourts.gov/sites/default/files/forms/10542-ans-cplt-spc.pdf"
+      - title: "Information about Small Claims Court"
+        description: ""
+        url: "https://www.njcourts.gov/self-help/small-claims-court"
+      - title: "Information about How a Judgment Against You Can be Collected"
+        description: ""
+        url: "https://www.njcourts.gov/self-help/collecting-money-civil"
+      - title: "How to File Documents with the Court and View Court Documents Online"
+        description: ""
+        url: "https://www.njcourts.gov/attorneys/ecourts-and-efiling"
 ---
