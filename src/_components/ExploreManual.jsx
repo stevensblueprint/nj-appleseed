@@ -9,10 +9,10 @@ export default function ExploreManual() {
         alt={imgAlt}
         className="w-28 h-28 mb-4 object-contain"
       />
-      <button className="bg-red-700 text-white px-8 py-2.5 rounded font-bold text-base hover:bg-red-800 transition-colors w-full max-w-[180px]">
+      <button className="bg-red-700 text-white px-4 py-2.5 rounded font-bold text-base hover:bg-red-800 transition-colors w-full max-w-[200px]">
         {buttonText}
       </button>
-      <p className="text-center mt-3 text-gray-700 text-sm">{description}</p>
+      <p className="text-center text-sm sm:text-base mt-3">{description}</p>
     </a>
   );
 
@@ -58,26 +58,29 @@ export default function ExploreManual() {
             <img
               src="/assets/vector/manual.svg"
               alt="Manual"
-              className="w-48 h-48 mb-6 object-contain"
+              className="w-[400px] h-[400px] mb-6"
             />
+
             <div className="flex items-center gap-6">
               <a href="manual" className="group inline-block">
-                <h3 className="relative text-5xl font-bold text-red-700">
+                <h3 className="relative text-7xl font-bold text-red-700">
                   <span className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1.5 after:bg-red-700 after:w-full after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover:after:scale-x-100 pb-1">
                     READ THE
                   </span>
                 </h3>
-                <h3 className="relative text-5xl font-bold text-red-700 mt-2">
+                <h3 className="relative text-7xl font-bold text-red-700 mt-2">
                   <span className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1.5 after:bg-red-700 after:w-full after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover:after:scale-x-100 pb-1">
                     MANUAL
                   </span>
                 </h3>
               </a>
-              <img
-                src="/assets/vector/arrow_forward.svg"
-                alt="Arrow"
-                className="w-20 h-20"
-              />
+              <a href="/manual">
+                <img
+                  src="/assets/vector/arrow_forward.svg"
+                  alt="Arrow"
+                  className="w-20 h-20 hover:scale-110 transition-transform duration-300"
+                />
+              </a>
             </div>
           </div>
 
