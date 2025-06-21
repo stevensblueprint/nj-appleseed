@@ -19,28 +19,28 @@ export default function ExploreManual() {
   const cards = [
     {
       href: "/faqs",
-      imgSrc: "/assets/faq.png",
+      imgSrc: "/assets/vector/faq.svg",
       imgAlt: "FAQ",
       buttonText: "FAQs",
       description: "Get answers to Frequently Asked Questions",
     },
     {
       href: "/practices",
-      imgSrc: "/assets/best.png",
+      imgSrc: "/assets/vector/best.svg",
       imgAlt: "Practices",
       buttonText: "BEST PRACTICES",
       description: "Follow these best Practices",
     },
     {
       href: "/resources",
-      imgSrc: "/assets/tools.png",
+      imgSrc: "/assets/vector/tools.svg",
       imgAlt: "Resources & Tools",
       buttonText: "RESOURCES & TOOLS",
       description: "Legal services, websites, and additional support",
     },
     {
       href: "/videos",
-      imgSrc: "/assets/videos.png",
+      imgSrc: "/assets/vector/videos.svg",
       imgAlt: "Videos",
       buttonText: "VIDEOS",
       description: "Helpful videos on handling medical debt",
