@@ -2,7 +2,7 @@ export default function ExploreManual() {
   const Card = ({ href, imgSrc, imgAlt, buttonText, description }) => (
     <a
       href={href}
-      className="bg-white rounded-lg p-6 flex flex-col items-center shadow-xl hover:shadow-2xl transition-shadow"
+      className="bg-white rounded-lg p-6 flex flex-col items-center shadow-md hover:shadow-2xl transition-shadow"
     >
       <img
         src={imgSrc}
@@ -50,35 +50,32 @@ export default function ExploreManual() {
   return (
     <section className="bg-background-grey py-12 md:py-24">
       <div className="px-6 max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-green mb-12">
+        <h2 className="text-4xl font-bold text-green mb-6 sm:mb-12">
           EXPLORE OUR SITE
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
-          <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
-            <img
-              src="/assets/vector/manual.svg"
-              alt="Manual"
-              className="w-[400px] h-[400px] mb-6"
-            />
-
-            <div className="flex items-center gap-6">
+          <div className="lg:col-span-2 flex flex-col items-center lg:items-start h-full">
+            <a href="/manual">
+              <img
+                src="/assets/vector/manual.svg"
+                alt="Manual"
+                className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] mb-4 sm:mb-6 hover:scale-105 transition-transform duration-300"
+              />
+            </a>
+            <div className="flex items-center gap-2 mt-auto">
               <a href="manual" className="group inline-block">
-                <h3 className="relative text-7xl font-bold text-red-700">
+                <h3 className="relative text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-red-700">
                   <span className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1.5 after:bg-red-700 after:w-full after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover:after:scale-x-100 pb-1">
-                    READ THE
-                  </span>
-                </h3>
-                <h3 className="relative text-7xl font-bold text-red-700 mt-2">
-                  <span className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1.5 after:bg-red-700 after:w-full after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover:after:scale-x-100 pb-1">
-                    MANUAL
+                    READ THE MANUAL
                   </span>
                 </h3>
               </a>
+
               <a href="/manual">
                 <img
                   src="/assets/vector/arrow_forward.svg"
                   alt="Arrow"
-                  className="w-20 h-20 hover:scale-110 transition-transform duration-300"
+                  className="w-12 h-12 sm:w-16 sm:h-16 xl:w-20 xl:h-20 hover:scale-110 transition-transform duration-300"
                 />
               </a>
             </div>
