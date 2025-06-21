@@ -12,9 +12,7 @@ export default function ExploreManual() {
       <button className="bg-red-700 text-white px-8 py-2.5 rounded font-bold text-base hover:bg-red-800 transition-colors w-full max-w-[180px]">
         {buttonText}
       </button>
-      <p className="text-center mt-3 text-gray-700 text-sm">
-        {description}
-      </p>
+      <p className="text-center mt-3 text-gray-700 text-sm">{description}</p>
     </a>
   );
 
@@ -24,29 +22,29 @@ export default function ExploreManual() {
       imgSrc: "/assets/faq.png",
       imgAlt: "FAQ",
       buttonText: "FAQs",
-      description: "Get answers to Frequently Asked Questions"
+      description: "Get answers to Frequently Asked Questions",
     },
     {
-      href: "/best-practices",
+      href: "/bestpractices",
       imgSrc: "/assets/best.png",
       imgAlt: "Best Practices",
       buttonText: "BEST PRACTICES",
-      description: "Follow these best Practices"
+      description: "Follow these best Practices",
     },
     {
       href: "/resources",
       imgSrc: "/assets/tools.png",
       imgAlt: "Resources & Tools",
       buttonText: "RESOURCES & TOOLS",
-      description: "Legal services, websites, and additional support"
+      description: "Legal services, websites, and additional support",
     },
     {
       href: "/videos",
       imgSrc: "/assets/videos.png",
       imgAlt: "Videos",
       buttonText: "VIDEOS",
-      description: "Helpful videos on handling medical debt"
-    }
+      description: "Helpful videos on handling medical debt",
+    },
   ];
 
   return (
@@ -58,11 +56,11 @@ export default function ExploreManual() {
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
           <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
-            <svg viewBox="0 0 300 400" className="w-full max-w-md h-auto mb-8">
+          <svg viewBox="0 0 300 400" className="w-full max-w-md h-auto mb-8">
               <rect x="20" y="50" width="200" height="280" rx="5" fill="#C53030" />
               <rect x="50" y="80" width="220" height="300" rx="5" fill="#4B7C4F" />
               <rect x="30" y="60" width="210" height="290" rx="5" fill="#B91C1C" />
-              <rect x="40" y="70" width="190" height="270" rx="5" fill="#FFF" stroke="#E5E7EB" strokeWidth="2" />
+              <rect x="40" y="70" width="190" height="270" rx="5" fill="none" stroke="#E5E7EB" strokeWidth="2" />
               <rect x="60" y="100" width="150" height="8" rx="2" fill="#E5E7EB" />
               <rect x="60" y="120" width="130" height="6" rx="2" fill="#E5E7EB" />
               <rect x="60" y="135" width="140" height="6" rx="2" fill="#E5E7EB" />
