@@ -1,4 +1,4 @@
-export default function Manual({ title, manual, comp, search }) {
+export default function Manual({ title, comp, search }) {
   return (
     <html lang="en">
       <head>

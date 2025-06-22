@@ -24,6 +24,11 @@ export default function ManualHero() {
             hoverColor="hover:bg-secondary"
           />
         </div>
+        <p className="text-white italic py-4 text-sm sm:text-lg">
+          You can view the full contents of the manual below. However we
+          recommend that you download a PDF version of the manual for easier
+          reading and printing.
+        </p>
       </div>
     </header>
   );
