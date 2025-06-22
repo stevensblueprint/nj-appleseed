@@ -5,6 +5,6 @@ title: "Section 3"
 id: ch3-s3
 ---
 
-## Section 3: Accuracy of the Bill or Appealing Denial of Benefits by Insurer
+# Section 3: Contesting the Accuracy of the Bill or Appealing Denial of Benefits by Insurer
 
 Content
