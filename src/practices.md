@@ -1,6 +1,6 @@
 ---
 title: Best Practices
-layout: _layouts/Practices.jsx
+layout: _layouts/BestPractices.jsx
 bestPractices:
   - content: If you are insured, understand the terms of your insurance plan with respect to deductibles, co-pays, co-shares and whether you need prior approval.
   - content: If you are uninsured, determine whether you are eligible for Medicaid, NJ Family Care or Free or Discounted Care (known as Charity Care). Charity Care is only available at acute care hospitals.
