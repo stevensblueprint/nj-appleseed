@@ -11,9 +11,9 @@ export default function Carousel({ resource }) {
       <article className="mb-8 italic text-base sm:text-xl">
         {resource.description}
       </article>
-        <article className="mb-4 text-sm sm:text-base text-gray-600 text-center">
-          Swipe right for more
-        </article>
+      <article className="mb-4 text-sm sm:text-base text-gray-600 text-center">
+        Swipe right for more
+      </article>
       <div className="relative">
         <div className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-4 py-4 px-4">
           {resource.items &&
