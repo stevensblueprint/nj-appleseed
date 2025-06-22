@@ -1,4 +1,4 @@
-export default function Resources({ title, sections, comp }) {
+export default function Resources({ title, resources, comp }) {
   return (
     <html lang="en">
       <head>
@@ -33,10 +33,9 @@ export default function Resources({ title, sections, comp }) {
             alt: "Resources and Tools",
           }}
         />
-        {sections.map((section, index) => (
-          <comp.Carousel key={`section-${index}`} first={section} />
+        {resources.map((resource, index) => (
+          <comp.Carousel key={`section-${index}`} resource={resource} />
         ))}
-
         <comp.Footer />
       </body>
     </html>

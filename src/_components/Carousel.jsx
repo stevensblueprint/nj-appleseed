@@ -1,39 +1,45 @@
-export default function Carousel({ first }) {
+export default function Carousel({ resource }) {
   return (
-    <>
-      <section className="py-12 px-6 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-[#367800] mb-6">{first.name}</h2>
-        <article className="mb-8">{first.description}</article>
+    <section className="mt-4 mb-4 py-4 sm:py-8 px-6 max-w-6xl mx-auto">
+      <div className="flex gap-2 items-center mb-6">
+        <h2 className="text-2xl sm:text-4xl font-bold text-green">
+          {resource.name}
+        </h2>
+        <img src={resource.icon} alt="" className="w-8 h-8" />
+      </div>
 
-        <div className="relative">
-          <div className="flex items-center">
-            <button className="absolute left-0 z-10 text-4xl text-black">
-              &#10094;
-            </button>
-
-            <div className="flex overflow-x-auto gap-4 py-4 px-12">
-              {first.items &&
-                first.items.map((item, index) => (
-                  <div
-                    key={`first-item-${index}`}
-                    className="flex-shrink-0 w-full md:w-1/3 bg-gray-200 rounded-lg p-6 min-h-[250px] flex flex-col justify-between"
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.alt}
-                      className="w-full h-auto object-contain mb-4"
-                    />
+      <article className="mb-8 italic text-base sm:text-xl">
+        {resource.description}
+      </article>
+      <div className="relative">
+        <div className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-4 py-4 px-4">
+          {resource.items &&
+            resource.items.map((item, index) => (
+              <div
+                className="flex-shrink-0 snap-center bg-background-grey rounded-lg shadow-lg 
+                           w-full sm:w-1/2 lg:w-1/3 h-56 sm:h-64 lg:h-72"
+                key={`resource-item-${index}`}
+              >
+                <a
+                  className="flex flex-col justify-between p-6 w-full h-full"
+                  target="_blank"
+                  href={item.url}
+                >
+                  <div>
+                    <h3 className="text-md md:text-xl font-semibold mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs md:text-base">{item.description}</p>
                   </div>
-                ))}
-            </div>
-
-            <button className="absolute right-0 z-10 text-4xl text-black">
-              &#10095;
-            </button>
-          </div>
+                  <button className="mt-4 self-start bg-primary text-white px-3 py-1 rounded">
+                    Read More
+                  </button>
+                </a>
+              </div>
+            ))}
         </div>
-        <div className="border-b-4 border-[#B2B2B2] mt-12"></div>
-      </section>
-    </>
+      </div>
+      <div className="border-b-4 border-dark-green pt-12"></div>
+    </section>
   );
 }
