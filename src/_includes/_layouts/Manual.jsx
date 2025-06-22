@@ -1,4 +1,4 @@
-export default function Manual({ title, manual, comp }) {
+export default function Manual({ title, manual, comp, search }) {
   return (
     <html lang="en">
       <head>
@@ -26,7 +26,7 @@ export default function Manual({ title, manual, comp }) {
       <body className="bg-gray-100 min-h-screen">
         <comp.Header />
         <comp.ManualHero />
-        <comp.ManualComp manual={manual} />
+        <comp.ManualSectionDropdown search={search} />
         <comp.Footer />
       </body>
     </html>
