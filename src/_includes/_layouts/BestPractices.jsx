@@ -1,9 +1,4 @@
-export default function BestPractices({
-  title,
-  children,
-  bestPractices,
-  comp,
-}) {
+export default function BestPractices({ title, bestPractices, comp }) {
   return (
     <html lang="en">
       <head>
