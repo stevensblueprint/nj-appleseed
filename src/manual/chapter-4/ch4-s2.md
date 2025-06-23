@@ -61,4 +61,4 @@ Filing a complaint with the CFPB can help in two ways:
 
 ## An Additional Warning
 
-Be wary of “debt elimination” or “debt relief” companies that advertise they can help you deal with debt. What they offer can be expensive, often does not work and, worst of all, they typically prevent you from properly defending against a debt collection action brought against you even if you have valid defenses.
+##### Be wary of “debt elimination” or “debt relief” companies that advertise they can help you deal with debt. What they offer can be expensive, often does not work and, worst of all, they typically prevent you from properly defending against a debt collection action brought against you even if you have valid defenses.
