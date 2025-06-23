@@ -69,6 +69,7 @@ export default function ManualSectionDropdown({ search }) {
         <section
           key={`content-${section.id}`}
           className={`overflow-hidden max-h-0 peer-checked/${section.id}:max-h-none peer-checked/${section.id}:py-12`}
+          id="manual-content"
         >
           <ReactMarkdown className="prose max-w-none">
             {section.body}

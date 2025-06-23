@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#manual-content h2 {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #000;
+  border: 1px solid #4b8b3b; /* Green border */
+  border-radius: 9999px;     /* Fully rounded */
+  background: linear-gradient(to right, #d9e6d3, #4b8b3b); /* Light to dark green gradient */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#manual-content h2::before {
+  content: "+";
+  color: #b91c1c;  /* Tailwind red-700 for cross */
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#manual-content a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+#manual-content a:hover {
+  color: #1e40af;
+  text-decoration: none;
+}
+
