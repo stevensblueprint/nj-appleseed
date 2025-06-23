@@ -54,7 +54,7 @@ export default function ManualSectionDropdown({ search }) {
                   <label
                     htmlFor={section.id}
                     key={`label-${section.id}`}
-                    className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary whitespace-nowrap"
+                    className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary sm:whitespace-nowrap"
                   >
                     {section.title}
                   </label>

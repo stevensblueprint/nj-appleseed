@@ -1,7 +1,7 @@
 ---
 chapter: 1
 section: 1
-title: "Section 1"
+title: "Section 1: Understanding Your Plan—Co-pays, Co-insurance, Authorization, Appealing Denial of Benefits or Coverage"
 id: ch1-s1
 ---
 

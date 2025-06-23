@@ -1,7 +1,7 @@
 ---
 chapter: 3
 section: 2
-title: "Section 2"
+title: "Section 2: Negotiating a “Reasonable Payment Plan"
 id: ch3-s2
 ---
 

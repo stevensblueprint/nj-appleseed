@@ -1,7 +1,7 @@
 ---
 chapter: 2
 section: 2
-title: "Section 2"
+title: "Section 2: Getting a Fair Estimate of Costs"
 id: ch2-s2
 ---
 
