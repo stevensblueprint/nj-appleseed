@@ -40,6 +40,7 @@ export default function BestPractices({ title, bestPractices, comp }) {
               key={index}
               number={index + 1}
               content={practice.content}
+              icon={practice.icon}
             />
           ))}
         </div>
