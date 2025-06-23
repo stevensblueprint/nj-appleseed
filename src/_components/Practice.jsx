@@ -6,17 +6,18 @@ export default function Practice({ number, content, icon }) {
           {number < 10 ? `0${number}` : number}
         </h1>
         <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-          <img 
-            src={icon} 
+          <img
+            src={icon}
             alt={`Practice ${number} icon`}
             className="w-6 h-6 sm:w-8 sm:h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-            style={{ 
-              filter: "brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)",
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)",
             }}
           />
         </div>
       </div>
-      
+
       <p className="text-lg sm:text-xl font-semibold leading-relaxed text-text-color group-hover:text-gray-800 transition-colors duration-300">
         {content}
       </p>
