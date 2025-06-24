@@ -55,8 +55,13 @@ export default function ManualSectionDropdown({ search }) {
       ))}
 
       {/* Desktop Table of Contents */}
-      <div className="flex flex-col md:flex-row flex-wrap rounded relative md:sticky md:top-0 md:z-20">
+      <div className="max-md:hidden flex flex-wrap rounded relative sticky top-0 z-20">
         <NavigationLinks groupedSections={groupedSections} />
+      </div>
+
+      {/* Mobile Table of Contents */}
+      <div className="flex md:hidden text-xs rounded relative sticky top-0 z-20">
+        <NavigationLinks groupedSections={groupedSections} mobile={true} />
       </div>
 
       {/* Content of each individual section */}
@@ -104,7 +109,7 @@ export default function ManualSectionDropdown({ search }) {
   );
 }
 
-function NavigationLinks({ groupedSections }) {
+function NavigationLinks({ groupedSections, mobile = false }) {
   return Object.entries(
     groupedSections, // Group sections by chapter
   ).map(([chapter, chapterSections]) => (
@@ -112,17 +117,23 @@ function NavigationLinks({ groupedSections }) {
       className="relative group focus-within:block"
       key={`chapter-${chapter}`}
     >
-      <label className="cursor-pointer block w-full bg-background-grey px-4 md:px-12 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white">
-        {Number(chapter) === 0 ? "Introduction" : `Chapter ${chapter}`}
+      <label className="cursor-pointer block w-full bg-background-grey px-4 sm:px-6 lg:px-12 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white">
+        {mobile
+          ? Number(chapter) === 0
+            ? "Intro"
+            : `Ch.${chapter}`
+          : Number(chapter) === 0
+            ? "Introduction"
+            : `Chapter ${chapter}`}
       </label>
-      <div className="absolute top-full left-0 w-full max-w-screen hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10 max-h-[75vh] overflow-y-auto">
+      <div className="absolute top-full left-0 w-full max-w-screen hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10 max-h-[75vh] overflow-y-auto text-left">
         {chapterSections.map((section) => (
           <label
             htmlFor={section.id}
             key={`label-${section.id}`}
             className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary manual-label"
           >
-            {section.title}
+            {mobile ? `Sec. ${section.section}` : section.title}
           </label>
         ))}
       </div>
