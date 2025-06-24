@@ -55,12 +55,12 @@ export default function ManualSectionDropdown({ search }) {
       ))}
 
       {/* Desktop Table of Contents */}
-      <div className="max-md:hidden flex flex-wrap rounded relative sticky top-0 z-20">
+      <div className="max-md:hidden flex flex-wrap rounded relative sticky top-0 z-20 py-2">
         <NavigationLinks groupedSections={groupedSections} />
       </div>
 
       {/* Mobile Table of Contents */}
-      <div className="flex md:hidden text-xs rounded relative sticky top-0 z-20">
+      <div className="flex md:hidden text-xs rounded relative sticky top-0 z-20 py-2">
         <NavigationLinks groupedSections={groupedSections} mobile={true} />
       </div>
 
