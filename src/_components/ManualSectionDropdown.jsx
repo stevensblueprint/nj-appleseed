@@ -11,7 +11,22 @@ export default function ManualSectionDropdown({ search }) {
       chapter: section.chapter,
       body: section.content, // markdown content
     }))
-    .sort((a, b) => a.section - b.section); // Sort by section number i.e 1-4
+    .sort((a, b) => {
+      if (a.chapter !== b.chapter) {
+        return a.chapter - b.chapter;
+      }
+      return a.section - b.section;
+    }); // Sort by chapter, then by section within chapter
+
+  const adjacents = sections.map((section, index) => {
+    const prev = index > 0 ? sections[index - 1] : null;
+    const next = index < sections.length - 1 ? sections[index + 1] : null;
+    return {
+      id: section.id,
+      prev: prev ? { id: prev.id, title: prev.title } : null,
+      next: next ? { id: next.id, title: next.title } : null,
+    };
+  });
 
   return (
     <section className="px-6 py-12 max-w-7xl mx-auto">
@@ -64,6 +79,31 @@ export default function ManualSectionDropdown({ search }) {
           </div>
         ))}
       </div>
+
+      {/* Adjacents for each section */}
+      {adjacents.map((adjacent) => (
+        <div
+          key={`nav-${adjacent.id}`}
+          className={`hidden peer-checked/${adjacent.id}:flex justify-between mt-4`}
+        >
+          {adjacent.prev && (
+            <label
+              htmlFor={adjacent.prev.id}
+              className="cursor-pointer px-6 py-3 hover:text-green text-primary rounded"
+            >
+              ← Previous: {adjacent.prev.title}
+            </label>
+          )}
+          {adjacent.next && (
+            <label
+              htmlFor={adjacent.next.id}
+              className="cursor-pointer px-6 py-3 hover:text-green text-primary rounded"
+            >
+              Next: {adjacent.next.title} →
+            </label>
+          )}
+        </div>
+      ))}
 
       {/* Content of each individual section */}
       {sections.map((section) => (
