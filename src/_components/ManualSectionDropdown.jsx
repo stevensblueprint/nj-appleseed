@@ -54,41 +54,8 @@ export default function ManualSectionDropdown({ search }) {
         />
       ))}
 
-      {/* Mobile Table of Contents Dropdown */}
-      <input
-        type="checkbox"
-        id="accordianMenuManual"
-        title="Mobile Menu"
-        className="hidden peer"
-      />
-      <div className="lg:hidden">
-        <label
-          htmlFor="accordianMenuManual"
-          className="flex cursor-pointer label"
-        >
-          Table of Contents
-          <svg
-            className="w-10 h-10 text-black"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6 h16 M4 12 h16 M4 18 h16"
-            ></path>
-          </svg>
-        </label>
-      </div>
-      {/* Mobile Table of Contents */}
-      <div className="lg:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col transition-all duration-300 pb-3">
-        <NavigationLinks groupedSections={groupedSections} />
-      </div>
       {/* Desktop Table of Contents */}
-      <div className="max-lg:hidden flex flex-wrap rounded relative sticky top-0 z-20">
+      <div className="flex flex-col md:flex-row flex-wrap rounded relative md:sticky md:top-0 md:z-20">
         <NavigationLinks groupedSections={groupedSections} />
       </div>
 
@@ -145,15 +112,15 @@ function NavigationLinks({ groupedSections }) {
       className="relative group focus-within:block"
       key={`chapter-${chapter}`}
     >
-      <label className="cursor-pointer block w-full bg-background-grey px-8 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white">
+      <label className="cursor-pointer block w-full bg-background-grey px-4 md:px-12 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white">
         {Number(chapter) === 0 ? "Introduction" : `Chapter ${chapter}`}
       </label>
-      <div className="w-full md:min-w-max hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10">
+      <div className="absolute top-full left-0 w-full max-w-screen hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10 max-h-[75vh] overflow-y-auto">
         {chapterSections.map((section) => (
           <label
             htmlFor={section.id}
             key={`label-${section.id}`}
-            className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary sm:whitespace-nowrap manual-label"
+            className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary manual-label"
           >
             {section.title}
           </label>
