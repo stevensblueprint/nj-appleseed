@@ -18,6 +18,12 @@ export default function ManualSectionDropdown({ search }) {
       return a.section - b.section;
     }); // Sort by chapter, then by section within chapter
 
+  const groupedSections = sections.reduce((acc, section) => {
+    acc[section.chapter] = acc[section.chapter] || [];
+    acc[section.chapter].push(section);
+    return acc;
+  }, {});
+
   const adjacents = sections.map((section, index) => {
     const prev = index > 0 ? sections[index - 1] : null;
     const next = index < sections.length - 1 ? sections[index + 1] : null;
@@ -48,35 +54,42 @@ export default function ManualSectionDropdown({ search }) {
         />
       ))}
 
-      {/* Labels for inputs and styling for manual dropdown */}
-      <div className="flex flex-wrap md:flex-row flex-col rounded relative sticky top-0 z-20">
-        {Object.entries(
-          sections.reduce((acc, section) => {
-            acc[section.chapter] = acc[section.chapter] || [];
-            acc[section.chapter].push(section);
-            return acc;
-          }, {}),
-        ).map(([chapter, chapterSections]) => (
-          <div
-            className="relative group focus-within:block"
-            key={`chapter-${chapter}`}
+      {/* Mobile Table of Contents Dropdown */}
+      <input
+        type="checkbox"
+        id="accordianMenuManual"
+        title="Mobile Menu"
+        className="hidden peer"
+      />
+      <div className="lg:hidden">
+        <label
+          htmlFor="accordianMenuManual"
+          className="flex cursor-pointer label"
+        >
+          Table of Contents
+          <svg
+            className="w-10 h-10 text-black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <label className="cursor-pointer block w-full bg-background-grey px-8 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white">
-              {Number(chapter) === 0 ? "Introduction" : `Chapter ${chapter}`}
-            </label>
-            <div className="absolute top-full left-0 w-full md:min-w-max hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10">
-              {chapterSections.map((section) => (
-                <label
-                  htmlFor={section.id}
-                  key={`label-${section.id}`}
-                  className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary sm:whitespace-nowrap manual-label"
-                >
-                  {section.title}
-                </label>
-              ))}
-            </div>
-          </div>
-        ))}
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6 h16 M4 12 h16 M4 18 h16"
+            ></path>
+          </svg>
+        </label>
+      </div>
+      {/* Mobile Table of Contents */}
+      <div className="lg:hidden overflow-hidden peer-checked:max-h-screen max-h-0 flex flex-col transition-all duration-300 pb-3">
+        <NavigationLinks groupedSections={groupedSections} />
+      </div>
+      {/* Desktop Table of Contents */}
+      <div className="max-lg:hidden flex flex-wrap rounded relative sticky top-0 z-20">
+        <NavigationLinks groupedSections={groupedSections} />
       </div>
 
       {/* Content of each individual section */}
@@ -104,7 +117,7 @@ export default function ManualSectionDropdown({ search }) {
               className="cursor-pointer px-6 py-3 hover:text-green text-primary rounded w-1/2 manual-label"
             >
               ← Previous -{" "}
-              {`${adjacent.prev.chapter !== 0 ? `Chapter ${adjacent.prev.chapter}` : ""}`}{" "}
+              {`${adjacent.prev.chapter !== 0 && adjacent.prev.section !== 0 ? `Chapter ${adjacent.prev.chapter}` : ""}`}{" "}
               {adjacent.prev.title}
             </label>
           )}
@@ -113,8 +126,8 @@ export default function ManualSectionDropdown({ search }) {
               htmlFor={adjacent.next.id}
               className="cursor-pointer px-6 py-3 hover:text-green text-primary rounded w-1/2 manual-label"
             >
-              Next - Chapter{" "}
-              {`${adjacent.next.chapter !== 0 ? `Chapter ${adjacent.next.chapter}` : ""}`}
+              Next -{" "}
+              {`${adjacent.next.chapter !== 0 && adjacent.next.section !== 0 ? `Chapter ${adjacent.next.chapter}` : ""}`}
               , {adjacent.next.title} →
             </label>
           )}
@@ -122,4 +135,30 @@ export default function ManualSectionDropdown({ search }) {
       ))}
     </section>
   );
+}
+
+function NavigationLinks({ groupedSections }) {
+  return Object.entries(
+    groupedSections, // Group sections by chapter
+  ).map(([chapter, chapterSections]) => (
+    <div
+      className="relative group focus-within:block"
+      key={`chapter-${chapter}`}
+    >
+      <label className="cursor-pointer block w-full bg-background-grey px-8 py-3 font-bold text-primary group-hover:bg-green group-hover:text-white">
+        {Number(chapter) === 0 ? "Introduction" : `Chapter ${chapter}`}
+      </label>
+      <div className="w-full md:min-w-max hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10">
+        {chapterSections.map((section) => (
+          <label
+            htmlFor={section.id}
+            key={`label-${section.id}`}
+            className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary sm:whitespace-nowrap manual-label"
+          >
+            {section.title}
+          </label>
+        ))}
+      </div>
+    </div>
+  ));
 }
