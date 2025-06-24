@@ -189,7 +189,7 @@ function NavigationLinks({ groupedSections, mobile = false }) {
             key={`label-${section.id}`}
             className="cursor-pointer px-2 sm:px-6 py-3 hover:bg-green hover:text-white text-primary manual-label"
           >
-            {mobile ? `Sec. ${section.section}` : section.title}
+            {mobile ? `Sec.${section.section}` : section.title}
           </label>
         ))}
       </div>
