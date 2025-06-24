@@ -36,7 +36,7 @@ benefits under your policy, how to appeal that denial. And we discuss why you mi
 off not using your credit card to pay for medical debt and why you also need to be careful about
 using medical credit cards like CareCredit or other specialized medical credit cards.
 
-_We explain it all in non-technical, easy-to-understand language._
+##### We explain it all in non-technical, easy-to-understand language.
 
 Throughout this Manual, there are links to websites containing additional information or
 forms which those who use this Manual online or in some other digital form can click on for ready

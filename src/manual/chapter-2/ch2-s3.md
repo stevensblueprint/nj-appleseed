@@ -1,7 +1,7 @@
 ---
 chapter: 2
 section: 3
-title: "Section 3"
+title: "Section 3: Negotiating Charge and Payment in Advance"
 id: ch2-s3
 ---
 

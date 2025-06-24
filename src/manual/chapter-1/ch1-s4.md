@@ -1,7 +1,7 @@
 ---
 chapter: 1
 section: 4
-title: "Section 4"
+title: "Section 4: Seeking Preventive, Routine and Specialty Care at a Doctor’s Office"
 id: ch1-s4
 ---
 
