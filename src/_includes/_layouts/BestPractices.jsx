@@ -33,13 +33,18 @@ export default function BestPractices({ title, bestPractices, comp }) {
             alt: "Best Practices",
           }}
         />
-        {bestPractices.map((practice, index) => (
-          <comp.Practice
-            key={index}
-            number={index + 1}
-            content={practice.content}
-          />
-        ))}
+
+        <div className="pt-16 sm:pt-24 pb-8">
+          {bestPractices.map((practice, index) => (
+            <comp.Practice
+              key={index}
+              number={index + 1}
+              content={practice.content}
+              icon={practice.icon}
+            />
+          ))}
+        </div>
+
         <comp.Footer />
       </body>
     </html>
