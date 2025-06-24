@@ -5,7 +5,7 @@ title: "Section 4: Your Rights After a Judgment Against You"
 id: ch4-s4
 ---
 
-## Section 4: Your Rights After a Judgment Against You
+# Section 4: Your Rights After a Judgment Against You
 
 If you end up with a Judgment against you, you either went to trial and lost or you lost without trial on a Motion for Summary Judgment. In either case, you can file an “Appeal” if you think the court got it wrong. The other possibility is that the court issued a “Default Judgment” against you because you did not file an Answer or you did, but maybe you did not show up for trial, or missed some other deadline and the Plaintiff won by “default,” equivalent to a forfeit in sports.
 

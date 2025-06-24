@@ -15,6 +15,7 @@ export default function ManualSectionDropdown({ search }) {
 
   return (
     <section className="px-6 py-12 max-w-7xl mx-auto">
+      <div id="manual-top" />
       {/* Inputs for each section */}
       {sections.map((section) => (
         <input
@@ -54,7 +55,7 @@ export default function ManualSectionDropdown({ search }) {
                   <label
                     htmlFor={section.id}
                     key={`label-${section.id}`}
-                    className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary sm:whitespace-nowrap"
+                    className="cursor-pointer px-6 py-3 hover:bg-green hover:text-white text-primary sm:whitespace-nowrap manual-label"
                   >
                     {section.title}
                   </label>
