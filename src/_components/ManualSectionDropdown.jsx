@@ -23,8 +23,12 @@ export default function ManualSectionDropdown({ search }) {
     const next = index < sections.length - 1 ? sections[index + 1] : null;
     return {
       id: section.id,
-      prev: prev ? { id: prev.id, title: prev.title } : null,
-      next: next ? { id: next.id, title: next.title } : null,
+      prev: prev
+        ? { id: prev.id, title: prev.title, chapter: prev.chapter }
+        : null,
+      next: next
+        ? { id: next.id, title: next.title, chapter: next.chapter }
+        : null,
     };
   });
 
@@ -80,31 +84,6 @@ export default function ManualSectionDropdown({ search }) {
         ))}
       </div>
 
-      {/* Adjacents for each section */}
-      {adjacents.map((adjacent) => (
-        <div
-          key={`nav-${adjacent.id}`}
-          className={`hidden peer-checked/${adjacent.id}:flex justify-between mt-4`}
-        >
-          {adjacent.prev && (
-            <label
-              htmlFor={adjacent.prev.id}
-              className="cursor-pointer px-6 py-3 hover:text-green text-primary rounded"
-            >
-              ← Previous: {adjacent.prev.title}
-            </label>
-          )}
-          {adjacent.next && (
-            <label
-              htmlFor={adjacent.next.id}
-              className="cursor-pointer px-6 py-3 hover:text-green text-primary rounded"
-            >
-              Next: {adjacent.next.title} →
-            </label>
-          )}
-        </div>
-      ))}
-
       {/* Content of each individual section */}
       {sections.map((section) => (
         <section
@@ -116,6 +95,35 @@ export default function ManualSectionDropdown({ search }) {
             {section.body}
           </ReactMarkdown>
         </section>
+      ))}
+
+      {/* Adjacents for each section */}
+      {adjacents.map((adjacent) => (
+        <div
+          key={`nav-${adjacent.id}`}
+          className={`hidden peer-checked/${adjacent.id}:flex justify-between mt-4`}
+        >
+          {adjacent.prev && (
+            <label
+              htmlFor={adjacent.prev.id}
+              className="cursor-pointer px-6 py-3 hover:text-green text-primary rounded w-1/2 manual-label"
+            >
+              ← Previous -{" "}
+              {`${adjacent.prev.chapter !== 0 ? `Chapter ${adjacent.prev.chapter}` : ""}`}{" "}
+              {adjacent.prev.title}
+            </label>
+          )}
+          {adjacent.next && (
+            <label
+              htmlFor={adjacent.next.id}
+              className="cursor-pointer px-6 py-3 hover:text-green text-primary rounded w-1/2 manual-label"
+            >
+              Next - Chapter{" "}
+              {`${adjacent.next.chapter !== 0 ? `Chapter ${adjacent.next.chapter}` : ""}`}
+              , {adjacent.next.title} →
+            </label>
+          )}
+        </div>
       ))}
     </section>
   );
