@@ -29,7 +29,7 @@ export default function ManualSectionDropdown({ search }) {
       ))}
 
       {/* Labels for inputs and styling for manual dropdown */}
-      <div className="flex flex-wrap md:flex-row flex-col rounded relative">
+      <div className="flex flex-wrap md:flex-row flex-col rounded relative sticky top-0 z-20">
         {Object.entries(
           sections.reduce((acc, section) => {
             acc[section.chapter] = acc[section.chapter] || [];
