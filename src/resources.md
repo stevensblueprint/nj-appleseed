@@ -1,6 +1,7 @@
 ---
 title: Resources & Tools
 layout: _layouts/Resources.jsx
+indexable: true
 resources:
   - name: AGENCIES
     description: Explore trusted organizations by county that are ready to support you. Find essential healthcare providers and legal resources in Appendix A, B, and C.
