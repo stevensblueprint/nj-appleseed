@@ -32,6 +32,7 @@ export default function Resources({ title, resources, comp }) {
             src: "/assets/vector/resources_hero.svg",
             alt: "Resources and Tools",
           }}
+          showManual={true}
         />
         {resources.map((resource, index) => (
           <comp.Carousel key={`section-${index}`} resource={resource} />
