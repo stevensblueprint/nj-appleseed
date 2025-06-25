@@ -3,7 +3,7 @@ title: Resources & Tools
 layout: _layouts/Resources.jsx
 resources:
   - name: AGENCIES
-    description: Explore trusted organizations by county that are ready to support you. Find essential healthcare providers and legal resources in Appendix A, B, and C.
+    description: Below are essential healthcare providers and legal resources organized by county found in Appendices A, B, and C of the Manual.
     icon: /assets/vector/hospital.svg
     items:
       - title: Federally Qualified Health Centers (FQHC)
