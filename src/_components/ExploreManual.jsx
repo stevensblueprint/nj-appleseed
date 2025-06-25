@@ -62,12 +62,21 @@ export default function ExploreManual() {
                 className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] mb-4 sm:mb-6 hover:scale-105 transition-transform duration-300"
               />
             </a>
-            <div className="flex items-center gap-2 mt-auto">
-              <a href="manual" className="group inline-block">
-                <h3 className="relative text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-red-700">
-                  <span className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1.5 after:bg-red-700 after:w-full after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover:after:scale-x-100 pb-1">
+            <div className="flex items-center gap-2 mt-auto group">
+              <a href="manual" className="inline-block">
+                <h3 className="relative text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-red-700 group-hover:scale-105 transition-transform duration-500">
+                  <span className="sm:hidden inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1.5 after:bg-red-700 after:w-full after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover:after:scale-x-100 pb-1">
                     READ THE MANUAL
                   </span>
+                  <div className="hidden sm:block">
+                    <span className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1.5 after:bg-red-700 after:w-full after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover:after:scale-x-100 pb-1">
+                      READ THE
+                    </span>
+                    <br />
+                    <span className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1.5 after:bg-red-700 after:w-full after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover:after:scale-x-100 pb-1">
+                      MANUAL
+                    </span>
+                  </div>
                 </h3>
               </a>
 
@@ -75,7 +84,7 @@ export default function ExploreManual() {
                 <img
                   src="/assets/vector/arrow_forward.svg"
                   alt="Arrow"
-                  className="w-12 h-12 sm:w-16 sm:h-16 xl:w-20 xl:h-20 hover:scale-110 transition-transform duration-300"
+                  className="w-12 h-12 sm:w-16 sm:h-16 xl:w-20 xl:h-20 group-hover:scale-110 transition-transform duration-500"
                 />
               </a>
             </div>
