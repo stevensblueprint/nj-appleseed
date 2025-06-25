@@ -15,7 +15,7 @@ export default function GenericDropdown({ contents, index }) {
         <img
           src={contents.logo}
           alt={contents.title}
-          className="h-full w-full max-w-[150px] md:max-w-[300px] object-contain"
+          className="h-full w-full max-w-[200px] md:max-w-[300px] object-contain"
         />
         <img
           src="/assets/vector/dropdown_arrow.svg"
