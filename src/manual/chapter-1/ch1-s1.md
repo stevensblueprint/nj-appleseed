@@ -3,6 +3,8 @@ chapter: 1
 section: 1
 title: "Section 1: Understanding Your Plan—Co-pays, Co-insurance, Authorization, Appealing Denial of Benefits or Coverage"
 id: ch1-s1
+url: /manual/chapter-1/section-1.html
+indexable: true
 ---
 
 # Section 1: Understanding Your Plan—Co-pays, Co-insurance, Authorization, Appealing Denial of Benefits or Coverage
