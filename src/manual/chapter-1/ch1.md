@@ -1,7 +1,7 @@
 ---
 chapter: 1
 section: 0
-title: "Chapter One"
+title: "Chapter One: Rights of Insured Patients"
 id: ch1-s0
 ---
 

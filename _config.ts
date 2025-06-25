@@ -45,5 +45,6 @@ site.use(postcss());
 site.ignore("index.html");
 site.copy("styles.css");
 site.copy("assets");
+site.copy("js");
 
 export default site;

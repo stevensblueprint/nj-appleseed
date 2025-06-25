@@ -5,7 +5,7 @@ title: "Section 3: How to Deal with a Debt Collection Lawsuit"
 id: ch4-s3
 ---
 
-## Section 3: How to Deal with a Debt Collection Lawsuit
+# Section 3: How to Deal with a Debt Collection Lawsuit
 
 At some point, you might receive, either in person or by mail, notification that you have been sued over a medical debt. What we said about the debt collection process is even more true when it comes to a lawsuit: **DO NOT IGNORE IT.** It will not go away on its own.
 

@@ -1,7 +1,7 @@
 ---
 chapter: 0
 section: 0
-title: "Introduction"
+title: "Introduction: Understanding Medical Debt Relief in New Jersey"
 id: introduction
 ---
 

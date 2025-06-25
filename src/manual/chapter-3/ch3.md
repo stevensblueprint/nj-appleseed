@@ -1,7 +1,7 @@
 ---
 chapter: 3
 section: 0
-title: "Chapter Three"
+title: "Chapter Three: What to Do When You Receive a Bill"
 id: ch3-s0
 ---
 
