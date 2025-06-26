@@ -3,6 +3,7 @@ chapter: 1
 section: 2
 title: "Section 2: Seeking Emergency Care"
 id: ch1-s2
+indexable: true
 ---
 
 # Section 2: Seeking Emergency Care

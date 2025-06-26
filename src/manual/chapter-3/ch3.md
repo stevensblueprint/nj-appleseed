@@ -3,6 +3,7 @@ chapter: 3
 section: 0
 title: "Chapter Three: What to Do When You Receive a Bill"
 id: ch3-s0
+indexable: true
 ---
 
 # CHAPTER THREE: WHAT TO DO WHEN YOU RECEIVE A BILL

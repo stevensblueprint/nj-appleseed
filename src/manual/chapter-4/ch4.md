@@ -3,6 +3,7 @@ chapter: 4
 section: 0
 title: "Chapter Four: Understanding the Collection Process"
 id: ch4-s0
+indexable: true
 ---
 
 # CHAPTER FOUR: UNDERSTANDING THE COLLECTION PROCESS
