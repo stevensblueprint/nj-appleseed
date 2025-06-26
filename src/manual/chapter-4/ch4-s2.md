@@ -3,6 +3,7 @@ chapter: 4
 section: 2
 title: "Section 2: The Fair Debt Collection Practices Act"
 id: ch4-s2
+indexable: true
 ---
 
 # Section 2: The Fair Debt Collection Practices Act

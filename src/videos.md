@@ -5,4 +5,5 @@ videos:
   - id: 1
     header: "Coming soon"
     link: ""
+indexable: true
 ---

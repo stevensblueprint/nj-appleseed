@@ -3,6 +3,7 @@ chapter: 3
 section: 3
 title: "Section 3: Contesting the Accuracy of the Bill or Appealing Denial of Benefits by Insurer"
 id: ch3-s3
+indexable: true
 ---
 
 # Section 3: Contesting the Accuracy of the Bill or Appealing Denial of Benefits by Insurer

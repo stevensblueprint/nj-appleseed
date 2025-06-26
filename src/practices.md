@@ -1,6 +1,7 @@
 ---
 title: Best Practices
 layout: _layouts/BestPractices.jsx
+indexable: true
 bestPractices:
   - content: If you are insured, understand the terms of your insurance plan with respect to deductibles, co-pays, co-shares and whether you need prior approval.
     icon: "/assets/vector/letter.svg"

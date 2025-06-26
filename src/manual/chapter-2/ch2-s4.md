@@ -3,6 +3,7 @@ chapter: 2
 section: 4
 title: "Section 4: Charity Care and Financial Assistance"
 id: ch2-s4
+indexable: true
 ---
 
 # Section 4: Charity Care and Financial Assistance
