@@ -2,7 +2,7 @@ export default function MainHero() {
   return (
     <header
       className="w-full h-80 md:h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url(/assets/stethoscope.png)" }}
+      style={{ backgroundImage: "url(/assets/manual_hero_2.png)" }}
     >
       <div
         className="flex flex-col justify-center items-start h-full w-full px-4 py-10 md:px-10 text-white max-w-lg md:max-w-3xl
