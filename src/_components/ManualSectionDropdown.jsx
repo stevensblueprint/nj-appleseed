@@ -177,19 +177,19 @@ function NavigationLinks({ groupedSections, mobile = false }) {
         {mobile
           ? Number(chapter) === 0
             ? "Intro"
-            : `Ch.${chapter}`
+            : `Ch. ${chapter}`
           : Number(chapter) === 0
             ? "Introduction"
             : `Chapter ${chapter}`}
       </label>
-      <div className="absolute top-full left-0 w-full max-w-screen hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10 max-h-[75vh] overflow-y-auto text-left">
+      <div className="absolute top-full left-0 w-full max-w-screen hidden group-hover:flex group-focus-within:flex flex-col bg-white rounded shadow-lg z-10 max-h-[60vh] overflow-y-auto text-left">
         {chapterSections.map((section) => (
           <label
             htmlFor={section.id}
             key={`label-${section.id}`}
             className="cursor-pointer px-2 sm:px-6 py-3 hover:bg-green hover:text-white text-primary manual-label"
           >
-            {mobile ? `Sec.${section.section}` : section.title}
+            {mobile ? `Sec. ${section.section}` : section.title}
           </label>
         ))}
       </div>
