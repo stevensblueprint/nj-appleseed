@@ -34,7 +34,7 @@ export default function Videos({ title, comp, videos }) {
           }}
         />
         <comp.AddVideo videos={videos} />
-        <comp.Footer/>
+        <comp.Footer />
       </body>
     </html>
   );
