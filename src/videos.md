@@ -10,4 +10,3 @@ videos:
     link: "dQw4w9WgXcQ"
 indexable: true
 ---
-
