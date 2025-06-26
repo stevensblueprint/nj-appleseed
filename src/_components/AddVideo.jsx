@@ -7,9 +7,9 @@ export default function AddVideo({ videos }) {
             <h3 className="text-4xl text-dark-green font-bold mb-8">
               {video.header}
             </h3>
-            <div className="aspect-w-16 aspect-h-9">
+            <div className="aspect-video">
               <iframe
-                src={`https://www.youtube.com/embed/${video.link}`}
+                src={video.link}
                 className="w-full h-96"
                 title={video.header}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
