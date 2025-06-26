@@ -1,4 +1,4 @@
-export default function Videos({ title, comp }) {
+export default function Videos({ title, comp, videos }) {
   return (
     <html lang="en">
       <head>
@@ -33,6 +33,7 @@ export default function Videos({ title, comp }) {
             alt: "Videos",
           }}
         />
+        <comp.AddVideo videos={videos} />
         <comp.Footer />
       </body>
     </html>
