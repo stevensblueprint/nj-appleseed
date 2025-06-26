@@ -3,6 +3,7 @@ chapter: 1
 section: 0
 title: "Chapter One: Rights of Insured Patients"
 id: ch1-s0
+indexable: true
 ---
 
 # CHAPTER ONE: RIGHTS OF INSURED PATIENTS

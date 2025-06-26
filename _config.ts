@@ -3,6 +3,7 @@ import jsx from "lume/plugins/jsx.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 import typography from "npm:@tailwindcss/typography";
+import sitemap from "lume/plugins/sitemap.ts";
 
 const site = lume({
   src: "./src",
@@ -46,5 +47,11 @@ site.ignore("index.html");
 site.copy("styles.css");
 site.copy("assets");
 site.copy("js");
+site.use(
+  sitemap({
+    filename: "sitemap.xml",
+    query: "indexable=true",
+  }),
+);
 
 export default site;

@@ -1,6 +1,7 @@
 ---
-title: FAQs
+title: Frequently Asked Questions (FAQs)
 layout: _layouts/FAQs.jsx
+indexable: true
 
 faqs:
   - title: I have a child who is sick, and we are not insured. What should I do?

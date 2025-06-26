@@ -3,6 +3,7 @@ chapter: 4
 section: 3
 title: "Section 3: How to Deal with a Debt Collection Lawsuit"
 id: ch4-s3
+indexable: true
 ---
 
 # Section 3: How to Deal with a Debt Collection Lawsuit

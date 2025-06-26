@@ -1,6 +1,7 @@
 ---
 title: Resources & Tools
 layout: _layouts/Resources.jsx
+indexable: true
 resources:
   - name: AGENCIES
     description: Below are essential healthcare providers and legal resources organized by county found in Appendices A, B, and C of the Manual.

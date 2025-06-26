@@ -1,7 +1,7 @@
 ---
-title: NJAppleseed
+title: End Medical Debt in New Jersey
 layout: _layouts/Home.jsx
-about:
+indexable: true
 
 organizations:
   - title: New Jersey Appleseed Public Interest Law Center
