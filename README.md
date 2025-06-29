@@ -20,31 +20,31 @@ The code here may be out of date, as the production repository has been forked t
 ### Starting Steps
 
 1. Clone the repository:
-   ```git clone git@github.com:New-Jersey-Appleseed/nj-appleseed.git```
+   `git clone git@github.com:New-Jersey-Appleseed/nj-appleseed.git`
 
 2. Change into the project directory:
-   ```cd nj-appleseed```
+   `cd nj-appleseed`
 
 3. Install Node.js dependencies:
-   ```npm install```
+   `npm install`
 
 4. Install deno dependencies and run the website:
-   ```deno task serve```
+   `deno task serve`
 
 You did it! You should see the project running on `http://localhost:3000`
 
 To run the format task for Tailwind utilities, use:
-```npm run format:write```
+`npm run format:write`
 
 ## File Structure (src)
 
 Each markdown file in the root of the `src` directory is a page on the website. The file names are used to generate the URLs, so they should be descriptive and follow a consistent naming convention.
 
-### src/_components
+### src/\_components
 
 Includes reusable components that are used across the website. These components are built using JSX styled syntax and can be found in the `_components` directory. Any new components should be added here to maintain consistency and reusability across the site.
 
-### src/_includes/_layouts
+### src/\_includes/\_layouts
 
 The `_includes/_layouts` directory contains the layout files for the website. These files define the overall structure of the pages and are composed of reusable components. Each markdown file specifies a layout in its frontmatter, which determines how the page is rendered.
 
@@ -72,22 +72,23 @@ Each section of the manual is a separate Markdown file, and only one section is 
 
 The files have the following metadata structure:
 
-   ```yaml
-   ---
-   chapter: <CHAPTER_NUMBER>
-   section: <SECTION_NUMBER>
-   title: "Section <SECTION_NUMBER>: <SECTION_TITLE>"
-   id: ch<CHAPTER_NUMBER>-s<SECTION_NUMBER>
-   indexable: true
-   ---
-   ```
+```yaml
+---
+chapter: <CHAPTER_NUMBER>
+section: <SECTION_NUMBER>
+title: "Section <SECTION_NUMBER>: <SECTION_TITLE>"
+id: ch<CHAPTER_NUMBER>-s<SECTION_NUMBER>
+indexable: true
+---
+```
 
-   **Note** the `section` field is always 0 for the start of the chapter.
+**Note** the `section` field is always 0 for the start of the chapter.
 
 All files must follow the format **chX-sY.md**, where:
+
 - X is the chapter number
 - Y is the section number
-This convention applies to both the filename and the id field in the frontmatter metadata.
+  This convention applies to both the filename and the id field in the frontmatter metadata.
 
 ## Special Thanks
 
