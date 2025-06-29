@@ -1,89 +1,96 @@
-## Setup for Devs
+# End Medical Debt New Jersey - Website
 
-1. Ensure that you have Deno installed. We are using Deno 2 (version 2.2.2). You can skip this step if you do. If you don't or are unsure, you can use the following command to install it.
+![Static Badge](https://img.shields.io/badge/Lume-JavaScript-blue)
+![Static Badge](https://img.shields.io/badge/Tailwind-CSS-green)
+![Static Badge](https://img.shields.io/badge/Blueprint_2025-0078E8)
 
-   **Homebrew users:**
+The website is live at [endmeddebtnj.org](https://endmeddebtnj.org) and its goal is to provide a comprehensive online resource for understanding and managing medical debt in New Jersey. It includes a detailed manual, resources, and guides to help individuals navigate the complexities of medical billing, insurance, and debt collection.
 
-   `brew install deno`
+The code here may be out of date, as the production repository has been forked to [here](https://github.com/New-Jersey-Appleseed/nj-appleseed).
 
-   **Linux/Non-Homebrew Users:**
+## Getting Started
 
-   Run the following in your terminal:
+### Prerequisites
 
-   `curl -fsSL https://deno.land/x/install/install.sh | sh`
+- **[Deno](https://deno.com/)**: The runtime for executing Lume. (version 2.2.2 is recommended)
+- **[Lume](https://lume.land/)**: The static site generator used to build the website.
+- **[Node.js](https://nodejs.org/en)**: Used for running formatting tasks for Tailwind utilties.
+- Must be added to the [New Jersey Appleseed organization](https://github.com/New-Jersey-Appleseed) on GitHub to contribute.
 
-   If you are using bash run `code $HOME/.bashrc` to open your bash configuration file in VSCode.
+### Starting Steps
 
-   If you are using zsh run `code $HOME/.zshrc` to open your zsh configuration file in VSCode.
+1. Clone the repository:
+   ```git clone git@github.com:New-Jersey-Appleseed/nj-appleseed.git```
 
-   In your respective file add the following:
+2. Change into the project directory:
+   ```cd nj-appleseed```
 
+3. Install Node.js dependencies:
+   ```npm install```
+
+4. Install deno dependencies and run the website:
+   ```deno task serve```
+
+You did it! You should see the project running on `http://localhost:3000`
+
+To run the format task for Tailwind utilities, use:
+```npm run format:write```
+
+## File Structure (src)
+
+Each markdown file in the root of the `src` directory is a page on the website. The file names are used to generate the URLs, so they should be descriptive and follow a consistent naming convention.
+
+### src/_components
+
+Includes reusable components that are used across the website. These components are built using JSX styled syntax and can be found in the `_components` directory. Any new components should be added here to maintain consistency and reusability across the site.
+
+### src/_includes/_layouts
+
+The `_includes/_layouts` directory contains the layout files for the website. These files define the overall structure of the pages and are composed of reusable components. Each markdown file specifies a layout in its frontmatter, which determines how the page is rendered.
+
+### src/assets/
+
+- At the root of the `assets` directory are all images used on the website
+- **docs** contains PDF files of the full medical debt manual and other resources
+- **manual** contains images of certain portions of the manual that are not
+  easily represented in markdown, such as income tables.
+- **vector** contains SVG files used throughout the site, such as icons and clipart.
+
+### src/css/styles.css
+
+Contains Tailwind global styles and Vanilla CSS. Some portions of the markdown file required Vanilla CSS to render correctly.
+
+### src/js/scroll.js
+
+This file contains JavaScript code that handles scrolling and navigation behavior specifically for the /manual page. It ensures that when a user clicks on a section in the manual's navigation bar, the page scrolls smoothly to the top of the page.
+
+### src/manual/
+
+The `manual` directory contains all written content for the online medical debt manual. Files are organized into subdirectories by chapter and follow a strict naming and metadata convention to support rendering and navigation.
+
+Each section of the manual is a separate Markdown file, and only one section is visible at a time on the `/manual` page. This improves readability by limiting how much content appears on screen at once.
+
+The files have the following metadata structure:
+
+   ```yaml
+   ---
+   chapter: <CHAPTER_NUMBER>
+   section: <SECTION_NUMBER>
+   title: "Section <SECTION_NUMBER>: <SECTION_TITLE>"
+   id: ch<CHAPTER_NUMBER>-s<SECTION_NUMBER>
+   indexable: true
+   ---
    ```
-   export DENO_INSTALL="/home/REPLACE_WITH_YOUR_USER/.deno"
-   export PATH="$DENO_INSTALL/bin:$PATH"
-   ```
 
-   Re-run the curl command.
+   **Note** the `section` field is always 0 for the start of the chapter.
 
-   Restart your terminal or enter a new one. To confirm deno was installed, check the version by running `deno --version`, should see something like `deno 2.2.2`
+All files must follow the format **chX-sY.md**, where:
+- X is the chapter number
+- Y is the section number
+This convention applies to both the filename and the id field in the frontmatter metadata.
 
-   You can find more information on the [Deno Docs](https://docs.deno.com/runtime/manual/getting_started/installation)
+## Special Thanks
 
-2. We need to clone the repository, which can be done with the following command:
+Special thanks to [New Jersey Appleseed Public Interest Law Center](https://njappleseed.org/), [New Jersey Citizen Action](https://www.njcitizenaction.org/), and [NJ For Health Care](https://njforhealthcare.org/) for creating the original manual and providing the content for this website.
 
-   - _For beginners_, we recommend having a folder on your computer where you plan on having this repo be stored.
-     1. To do such, open your Finder or File Explorer alongside a blank new VSCode window.
-     2. Drag the folder (that you wish to have this repository put into) inside of the VSCode window OR do File > Open Folder in VSCode.
-     3. Now, inside VSCode open the terminal (In the Top Menu Bar press 'View' > 'Terminal'). You can now run the below command.
-   - cloning via https:
-
-     `git clone https://github.com/stevensblueprint/nj-appleseed.git`
-
-3. We can run the project using the following command:
-
-   `deno task serve`
-
-4. You did it! You should see the project running on `http://localhost:3000`
-
-## Markdown Files For the Manual
-
-In the 'manual' directory there are several markdown files divided into
-subdirectories based on chapter. This only includes the core written content
-of the manual. No endnotes or appendix (the latter is addressed in the
-Resources & Tools) page.
-
-ch1-s0 stands for "Chapter 1, Section 0" and so on. All of these files have
-type section and are retrieved on the inital page load of /manual.
-
-There are 2 types of files in the manual directory:
-
-1. **Chapter Files**: These files group sections together and guide the
-   rendering of the manual's navigation bar. Their metadata includes
-
-   ***
-
-   chapter: 1
-   section: 0
-   title: "Chapter One"
-   id: ch1-s0
-
-   ***
-
-   Note the `section` field is always 0 for chapter files.
-
-2. **Section Files**: These files contain the actual content of each section
-   and are rendered when the user selects a section from the navigation bar.
-   Their metadata includes
-   ***
-   chapter: 1
-   section: 1
-   title: "Section 1"
-   id: ch1-s1
-   ***
-
-Follow the naming convention chX-sY.md, where X is the chapter number
-and Y is the section number. Use this for both the name of the markdown file
-and the `id` field in the metadata.
-
-At any given time, the manual page will only show a single section. This is
-to limit the amount of text on the page and make it more manageable for the user.
+Also thank you to the [members of Stevens Blueprint](https://sitblueprint.com/projects/nj-appleseed/) who designed and developed the website.
